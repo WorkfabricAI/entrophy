@@ -4,20 +4,22 @@
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
 # ============================================================================
 
-import os
-import json
 import argparse
-import logging
-import numpy as np
-from sklearn.metrics import precision_recall_fscore_support
-import matplotlib.pyplot as plt
-import re
-from typing import List, Dict, Tuple, Any, Optional
-from data_processor import WorkflowDataProcessor
-import tqdm
 import datetime
+import json
+import logging
+import os
+import re
 import time
+from typing import Any, Dict, List, Optional, Tuple
+
+import matplotlib.pyplot as plt
+import numpy as np
+import tqdm
 import yaml
+from sklearn.metrics import precision_recall_fscore_support
+
+from data_processor import WorkflowDataProcessor
 
 # Configure logging
 logging.basicConfig(
@@ -252,7 +254,8 @@ class WorkflowSegmenter:
         elif self.provider == "huggingface":
             try:
                 import torch
-                from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+                from transformers import (AutoModelForCausalLM, AutoTokenizer,
+                                          pipeline)
             except ImportError:
                 raise ImportError("Transformers package not installed. Run `pip install transformers`.")
 
@@ -820,6 +823,7 @@ if __name__ == "__main__":
         logger.info(f"Setting CUDA_VISIBLE_DEVICES={args.gpus}")
     
     import torch
+
     # Set random seed
     set_seed(args.seed)
     

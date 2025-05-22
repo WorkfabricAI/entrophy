@@ -4,23 +4,24 @@
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
 # ============================================================================
 
-import os
-import json
 import argparse
-import logging
-import numpy as np
-from sklearn.metrics import classification_report, confusion_matrix
-import re
-from typing import List, Tuple, Optional, Dict, Any
-from data_processor import WorkflowDataProcessor
-import tqdm
-import seaborn as sns
-import matplotlib.pyplot as plt
-import pandas as pd
-import yaml
 import datetime
+import json
+import logging
+import os
+import re
 import time
+from typing import Any, Dict, List, Optional, Tuple
 
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import tqdm
+import yaml
+from sklearn.metrics import classification_report, confusion_matrix
+
+from data_processor import WorkflowDataProcessor
 
 # Configure logging
 logging.basicConfig(
@@ -206,7 +207,8 @@ class WorkflowClassifier:
                 
         elif self.provider == "huggingface":
             try:
-                from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+                from transformers import (AutoModelForCausalLM, AutoTokenizer,
+                                          pipeline)
             except ImportError:
                 raise ImportError("Transformers package not installed. Run `pip install transformers`.")
 
@@ -661,7 +663,8 @@ if __name__ == "__main__":
         os.environ["CUDA_VISIBLE_DEVICES"] = args.gpus
         logger.info(f"Setting CUDA_VISIBLE_DEVICES={args.gpus}")
     
-    import torch    
+    import torch
+
     # Set random seed
     set_seed(args.seed)
     
