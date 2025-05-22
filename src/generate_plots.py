@@ -88,9 +88,6 @@ class PlotGenerator:
             "Qwen3-32B": "Qwen3-32B",
             "gemini-2.5-flash": "Gemini-2.5-Flash",
             "hr": "HR",
-            # Add other model/domain/task names as needed
-            # 'example_domain': 'Example Domain',
-            # 'example_task_classification': 'Example Classification Task',
         }
 
     def _get_display_name(self, original_name):
@@ -317,7 +314,7 @@ class PlotGenerator:
                     f"{height:.2f}",
                     ha="center",
                     va="bottom",
-                    fontsize=9,
+                    fontsize=14,
                     fontweight="bold",  # Updated font
                     bbox=dict(
                         facecolor="white",
@@ -333,21 +330,20 @@ class PlotGenerator:
         add_labels(bars4)
 
         # Add styled labels and title
-        # ax.set_xlabel('Model', fontweight='bold', fontsize=18) # Removed as per style
         ax.set_ylabel("Score", fontweight="bold", fontsize=18)  # Increased font size
 
         display_domain = self._get_display_name(domain)
         display_task_type = self._get_display_name(task_type)
-        title = f"Classification Performance Metrics\\n{display_domain} - {display_task_type}"
+        title = f"Classification Performance Metrics ({display_domain})"
         ax.set_title(
-            title, fontweight="bold", fontsize=20, pad=20
+            title, fontweight="bold", fontsize=24, pad=20
         )  # Increased font size
 
         ax.set_xticks([])  # Remove x-axis ticks
         ax.set_xticklabels([])  # Remove x-axis labels (model names)
 
-        ax.set_ylim(0, 1.25)  # Give more room for the data labels
-        plt.setp(ax.get_yticklabels(), fontsize=16)  # Increased y-tick label size
+        ax.set_ylim(0, 1.)  # Give more room for the data labels
+        plt.setp(ax.get_yticklabels(), fontsize=18)  # Increased y-tick label size
 
         # Add subtle grid lines only on the y-axis, with color
         ax.grid(axis="y", linestyle="--", alpha=0.3, color="gray")
@@ -380,7 +376,7 @@ class PlotGenerator:
             loc="lower center",
             ncol=4,
             bbox_to_anchor=(0.5, -0.08),  # Adjusted position
-            fontsize=14,
+            fontsize=18,
             frameon=True,
             framealpha=0.8,
             edgecolor="lightgray",
@@ -400,7 +396,7 @@ class PlotGenerator:
             loc="lower center",
             ncol=min(len(models), 5),
             bbox_to_anchor=(0.5, -0.16),  # Adjusted position below metric legend
-            fontsize=14,
+            fontsize=18,
             frameon=True,
             framealpha=0.8,
             edgecolor="lightgray",
@@ -445,71 +441,125 @@ class PlotGenerator:
         correct = df.values.diagonal().sum()
         accuracy = correct / total if total > 0 else 0
 
-        # Create a custom diverging colormap for better visualization
-        cmap = self.diverging_cmap
+        # Create modern single-hue colormap optimized for confusion matrices
+        colors = ['#f8f9fa', '#e9ecef', '#dee2e6', '#ced4da', '#adb5bd', 
+                 '#6c757d', '#495057', '#343a40', '#212529', '#000000']
+        modern_cmap = LinearSegmentedColormap.from_list("modern_confusion", colors, N=256)
 
-        # Create heatmap with enhanced styling
-        plt.figure(figsize=(max(12, len(classes) * 0.6), max(10, len(classes) * 0.5)))
+        # Enhanced figure sizing based on number of classes
+        base_size = max(10, len(classes) * 1.2)
+        fig_width = min(base_size, 20)  # Cap at 20 inches
+        fig_height = min(base_size * 0.9, 18)  # Cap at 18 inches
+        
+        fig, ax = plt.subplots(figsize=(fig_width, fig_height))
+        fig.patch.set_facecolor('white')
 
-        # Plot the heatmap with percentage annotations
-        ax = sns.heatmap(
-            df_percentages,
-            annot=df.values,
-            fmt="d",
-            cmap=cmap,
-            linewidths=1,
-            square=True,
-            cbar_kws={"shrink": 0.8, "label": "% of True Class"},
-        )
+        # Create custom annotation matrix with both counts and percentages
+        annotation_matrix = np.empty_like(df.values, dtype=object)
+        for i in range(df.shape[0]):
+            for j in range(df.shape[1]):
+                count = df.values[i, j]
+                percentage = df_percentages.values[i, j]
+                if count == 0:
+                    annotation_matrix[i, j] = ""
+                else:
+                    annotation_matrix[i, j] = f"{count:,}"
 
-        # Customize the annotations
-        for text in ax.texts:
-            val = int(text.get_text())
-            if val == 0:
-                text.set_text("")
-            elif val >= 10:
-                text.set_weight("bold")
+        # Plot the heatmap with enhanced styling
+        im = ax.imshow(df_percentages.values, cmap=modern_cmap, aspect='equal', 
+                      vmin=0, vmax=100, interpolation='nearest')
 
-            # Adjust text color for better visibility based on background
-            text_color = "white" if val / df.values.max() > 0.5 else "black"
-            text.set_color(text_color)
+        # Add custom annotations with better formatting
+        for i in range(df.shape[0]):
+            for j in range(df.shape[1]):
+                count = df.values[i, j]
+                percentage = df_percentages.values[i, j]
+                
+                if count > 0:
+                    # Determine text color based on background intensity
+                    bg_intensity = percentage / 100.0
+                    text_color = 'white' if bg_intensity > 0.6 else 'black'
+                    
+                    # Different font weights based on value significance
+                    font_weight = 'bold' if count >= df.values.max() * 0.1 else 'normal'
+                    font_size = 14 if count >= df.values.max() * 0.05 else 12
+                    
+                    # Format numbers with commas for readability
+                    if count >= 1000:
+                        count_text = f"{count:,}"
+                    else:
+                        count_text = str(count)
+                    
+                    text = f"{count_text}"
+                    
+                    ax.text(j, i, text, ha='center', va='center',
+                           color=text_color, fontsize=font_size, fontweight=font_weight)
 
-        # Add gridlines with enhanced styling
-        ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha="right", fontsize=10)
-        ax.set_yticklabels(ax.get_yticklabels(), rotation=0, fontsize=10)
+        # Enhanced colorbar with better styling
+        cbar = plt.colorbar(im, ax=ax, shrink=0.8, aspect=30, pad=0.02)
+        cbar.set_label('Percentage of True Class (%)', fontsize=16, fontweight='bold', 
+                      labelpad=20, rotation=270, va='bottom')
+        cbar.ax.tick_params(labelsize=14, width=1.5, length=5)
+        
+        # Style the colorbar frame
+        cbar.outline.set_edgecolor('#cccccc')
+        cbar.outline.set_linewidth(1.5)
 
-        # Add descriptive titles and labels
-        plt.title(
-            f'Confusion Matrix - {model_name}\n{domain.capitalize()} {task_type.replace("_", " ").title()}',
-            fontsize=16,
-            fontweight="bold",
-            pad=20,
-        )
-        plt.xlabel("Predicted Class", fontsize=14, fontweight="bold", labelpad=15)
-        plt.ylabel("True Class", fontsize=14, fontweight="bold", labelpad=15)
+        # Enhanced axis styling
+        ax.set_xlim(-0.5, len(classes) - 0.5)
+        ax.set_ylim(len(classes) - 0.5, -0.5)
+        
+        # Set ticks and labels with better formatting
+        ax.set_xticks(range(len(classes)))
+        ax.set_yticks(range(len(classes)))
+        
+        # Get display names for classes
+        display_classes = [self._get_display_name(c) for c in classes]
+        
+        ax.set_xticklabels(display_classes, rotation=45, ha='right', fontsize=16, 
+                          fontweight='medium')
+        ax.set_yticklabels(display_classes, rotation=0, fontsize=16, 
+                          fontweight='medium')
 
-        # Add accuracy as text annotation
-        plt.figtext(
-            0.5,
-            0.01,
-            f"Overall Accuracy: {accuracy:.2%}",
-            ha="center",
-            fontsize=12,
-            fontweight="bold",
-            bbox=dict(facecolor="white", alpha=0.8, boxstyle="round,pad=0.5"),
-        )
+        # Add subtle grid lines
+        for i in range(len(classes) + 1):
+            ax.axhline(i - 0.5, color='white', linewidth=2)
+            ax.axvline(i - 0.5, color='white', linewidth=2)
 
-        # Add a subtle border around the heatmap
-        for _, spine in ax.spines.items():
-            spine.set_visible(True)
-            spine.set_color("#cccccc")
-            spine.set_linewidth(1)
+        # Enhanced labels and title
+        display_model_name = self._get_display_name(model_name)
+        display_domain = self._get_display_name(domain)
+        display_task_type = self._get_display_name(task_type)
+        
+        ax.set_xlabel('Predicted Class', fontsize=18, fontweight='bold', 
+                     labelpad=20, color='#2c3e50')
+        ax.set_ylabel('True Class', fontsize=18, fontweight='bold', 
+                     labelpad=20, color='#2c3e50')
 
-        # Save figure with enhanced quality
+        # Multi-line title with better typography
+        title_line2 = f"{display_model_name} • {display_domain}"
+        
+        ax.text(0.5, 1.08, title_line2, transform=ax.transAxes, 
+               fontsize=20, fontweight='medium', ha='center', 
+               color='#7f8c8d', style='italic')
+
+        # Enhanced border around the entire heatmap
+        border_rect = plt.Rectangle((-0.5, -0.5), len(classes), len(classes), 
+                                  fill=False, color='#34495e', linewidth=3)
+        ax.add_patch(border_rect)
+
+        # Remove default spines and ticks
+        for spine in ax.spines.values():
+            spine.set_visible(False)
+        
+        ax.tick_params(bottom=False, top=False, left=False, right=False)
+
+        # Enhanced layout and save
         plt.tight_layout()
         fig_path = self.output_dir / f"{domain}_{task_type}_{model_name}_confusion.png"
-        plt.savefig(fig_path, dpi=300, bbox_inches="tight", pad_inches=0.3)
-        plt.close()
+        plt.savefig(fig_path, dpi=300, bbox_inches='tight', pad_inches=0.5, 
+                   facecolor='white', edgecolor='none')
+        plt.close(fig)
 
     def plot_segmentation_metrics(self, domain, task_type):
         """Create plots for segmentation metrics across models."""
@@ -520,56 +570,145 @@ class PlotGenerator:
 
         # Prepare data for plotting
         models = list(data.keys())
+        display_models = [self._get_display_name(m) for m in models]
         precision = [data[m].get("boundary_precision", 0) for m in models]
         recall = [data[m].get("boundary_recall", 0) for m in models]
         f1 = [data[m].get("boundary_f1", 0) for m in models]
 
-        # Create figure for boundary metrics
-        fig, ax = plt.subplots(figsize=(10, 6))
+        # Create figure with constrained layout
+        fig, ax = plt.subplots(figsize=(15, 10), constrained_layout=True)
 
         x = np.arange(len(models))
-        width = 0.25
+        width = 0.2  # Width of a single bar in a group
 
-        # Plot bars
-        ax.bar(
-            x - width,
+        model_bar_colors = [self.model_colors.get(m, "#333333") for m in models]
+
+        # Plot bars with enhanced styling
+        bars1 = ax.bar(
+            x - 1.5 * width,
             precision,
             width,
             label="Precision",
-            color=[self.model_colors.get(m, "#333333") for m in models],
-            alpha=0.8,
+            color=model_bar_colors,
+            alpha=0.85,
+            edgecolor="white",
+            linewidth=1.0,
         )
-        ax.bar(
-            x,
+        bars2 = ax.bar(
+            x - 0.5 * width,
             recall,
             width,
             label="Recall",
-            color=[self.model_colors.get(m, "#333333") for m in models],
-            alpha=0.6,
+            color=model_bar_colors,
+            alpha=0.70,
+            edgecolor="white",
+            linewidth=1.0,
         )
-        ax.bar(
-            x + width,
+        bars3 = ax.bar(
+            x + 0.5 * width,
             f1,
             width,
             label="F1-Score",
-            color=[self.model_colors.get(m, "#333333") for m in models],
-            alpha=0.4,
+            color=model_bar_colors,
+            alpha=0.55,
+            edgecolor="white",
+            linewidth=1.0,
         )
 
-        # Add labels and legend
-        ax.set_xlabel("Model")
-        ax.set_ylabel("Score")
-        ax.set_title(f"{domain.capitalize()}")
-        ax.set_xticks(x)
-        ax.set_xticklabels(models, rotation=45, ha="right")
-        ax.legend()
-        ax.grid(axis="y", linestyle="--", alpha=0.7)
+        # Add data labels on top of bars
+        def add_labels(bars_group):
+            for bar in bars_group:
+                height = bar.get_height()
+                ax.text(
+                    bar.get_x() + bar.get_width() / 2.0,
+                    height + 0.015,
+                    f"{height:.2f}",
+                    ha="center",
+                    va="bottom",
+                    fontsize=14,
+                    fontweight="bold",
+                    bbox=dict(
+                        facecolor="white",
+                        alpha=0.7,
+                        boxstyle="round,pad=0.2",
+                        edgecolor="lightgray",
+                    ),
+                )
+
+        add_labels(bars1)
+        add_labels(bars2)
+        add_labels(bars3)
+
+        # Add styled labels and title
+        ax.set_ylabel("Score", fontweight="bold", fontsize=18)
+
+        display_domain = self._get_display_name(domain)
+        display_task_type = self._get_display_name(task_type)
+        title = f"Segmentation Performance Metrics ({display_domain})"
+        ax.set_title(title, fontweight="bold", fontsize=22, pad=20)
+
+        ax.set_xticks([])  # Remove x-axis ticks
+        ax.set_xticklabels([])  # Remove x-axis labels (model names)
+
+        ax.set_ylim(0, 1.)  # Give more room for the data labels
+        plt.setp(ax.get_yticklabels(), fontsize=18)
+
+        # Add subtle grid lines only on the y-axis
+        ax.grid(axis="y", linestyle="--", alpha=0.3, color="gray")
+
+        # Add a light background color
+        ax.set_facecolor("#f9f9f9")
+
+        # Style spines
+        for spine_val in ax.spines.values():
+            if spine_val.spine_type in ["left", "bottom"]:
+                spine_val.set_edgecolor("#dddddd")
+                spine_val.set_linewidth(1.0)
+            else:
+                spine_val.set_visible(False)
+
+        # Create figure-level legend for metrics
+        metric_handles = [bars1[0], bars2[0], bars3[0]]
+        metric_labels = ["Precision", "Recall", "F1-Score"]
+        fig.legend(
+            metric_handles,
+            metric_labels,
+            loc="lower center",
+            ncol=3,
+            bbox_to_anchor=(0.5, -0.08),
+            fontsize=18,
+            frameon=True,
+            framealpha=0.8,
+            edgecolor="lightgray",
+        )
+
+        # Create figure-level legend for models
+        model_legend_handles = [
+            plt.Rectangle(
+                (0, 0), 1, 1, color=self.model_colors.get(m, "#333333"), alpha=0.85
+            )
+            for m in models
+        ]
+        model_legend_labels = display_models
+        fig.legend(
+            model_legend_handles,
+            model_legend_labels,
+            loc="lower center",
+            ncol=min(len(models), 5),
+            bbox_to_anchor=(0.5, -0.16),
+            fontsize=18,
+            frameon=True,
+            framealpha=0.8,
+            edgecolor="lightgray",
+        )
+
+        # Adjust layout to make space for legends at the bottom
+        fig.subplots_adjust(bottom=0.25)
 
         # Save figure
-        plt.tight_layout()
         fig_path = self.output_dir / f"{domain}_{task_type}_boundary_metrics.png"
-        plt.savefig(fig_path)
-        plt.close()
+        plt.savefig(fig_path, dpi=300, bbox_inches="tight")
+        plt.close(fig)
 
     def plot_detailed_accuracy(self, domain, task_type):
         """Create plots showing accuracy information from detailed_results.json."""
@@ -638,7 +777,7 @@ class PlotGenerator:
                 )
 
     def _plot_class_accuracy(self, class_counts, model_name, domain, task_type):
-        """Create a plot showing per-class accuracy for a model."""
+        """Create a modern, professional plot showing per-class accuracy for a model."""
         classes = list(class_counts.keys())
         correct = [class_counts[c]["correct"] for c in classes]
         incorrect = [class_counts[c]["incorrect"] for c in classes]
@@ -663,51 +802,172 @@ class PlotGenerator:
         correct = [correct[i] for i in sorted_indices]
         incorrect = [incorrect[i] for i in sorted_indices]
         accuracy = [accuracy[i] for i in sorted_indices]
+        sorted_display_classes = [display_classes[i] for i in sorted_indices]
 
-        # Create figure
-        fig, ax = plt.subplots(figsize=(12, 8))
+        # Enhanced figure sizing based on number of classes
+        base_height = max(8, len(classes) * 0.7)
+        fig_height = min(base_height, 16)  # Cap at 16 inches
+        fig, ax = plt.subplots(figsize=(14, fig_height), constrained_layout=True)
+        fig.patch.set_facecolor('white')
 
-        # Plot horizontal bars
+        # Create modern color scheme with gradient based on accuracy
+        base_color = self.model_colors.get(model_name, "#333333")
+        # Convert hex to RGB for gradient calculations
+        import matplotlib.colors as mcolors
+        base_rgb = mcolors.hex2color(base_color)
+        
+        # Create colors with varying intensity based on accuracy
+        bar_colors = []
+        for acc in accuracy:
+            # Higher accuracy = more saturated color
+            intensity = 0.3 + (acc * 0.7)  # Range from 0.3 to 1.0
+            color_rgb = tuple(c * intensity + (1 - intensity) * 0.95 for c in base_rgb)
+            bar_colors.append(color_rgb)
+
+        # Plot enhanced horizontal bars
         y = np.arange(len(classes))
-        ax.barh(
-            y, accuracy, height=0.5, color=self.model_colors.get(model_name, "#333333")
+        bars = ax.barh(
+            y, 
+            accuracy, 
+            height=0.7, 
+            color=bar_colors,
+            alpha=0.9,
+            edgecolor='white',
+            linewidth=1.5
         )
 
-        # Add data labels
-        for i, v in enumerate(accuracy):
-            ax.text(v + 0.01, i, f"{v:.2f}", va="center", fontsize=9)
-
-        # Add counts as annotations
-        for i, (c, ic) in enumerate(zip(correct, incorrect)):
-            total = c + ic
-            ax.text(
-                0.01,
-                i,
-                f"{c}/{total}",
-                va="center",
-                ha="left",
-                fontsize=8,
-                color="white",
-                fontweight="bold",
+        # Add gradient effect by overlaying semi-transparent bars
+        for i, (bar, acc) in enumerate(zip(bars, accuracy)):
+            # Add a subtle gradient overlay
+            gradient_alpha = 0.2 + (acc * 0.3)
+            ax.barh(
+                y[i], 
+                acc, 
+                height=0.7, 
+                color=base_color,
+                alpha=gradient_alpha,
+                edgecolor='none'
             )
 
-        # Add labels
-        ax.set_xlabel("Accuracy")
-        ax.set_title(
-            f"Per-Class Accuracy - {display_model_name} ({display_domain} - {display_task_type})"
-        )
-        ax.set_yticks(y)
-        ax.set_yticklabels([display_classes[i] for i in sorted_indices])
-        ax.set_xlim(0, 1.1)  # Set x-axis limit with some room for labels
-        ax.grid(axis="x", linestyle="--", alpha=0.7)
+        # Enhanced data labels with styled boxes
+        for i, (acc, c, ic) in enumerate(zip(accuracy, correct, incorrect)):
+            total = c + ic
+            shift = 0.02 if acc > 0.15 else 0.1
+            # Accuracy percentage on the right
+            ax.text(
+                acc + shift, 
+                i, 
+                f"{acc:.1%}", 
+                va="center", 
+                ha="left",
+                fontsize=12,
+                fontweight="bold",
+                bbox=dict(
+                    facecolor="white",
+                    alpha=0.9,
+                    boxstyle="round,pad=0.3",
+                    edgecolor="lightgray",
+                    linewidth=0.5
+                )
+            )
+            
+            # Count information on the left (inside bar if space allows)
+            count_text = f"{c}/{total}"
+            if acc > 0.15:  # If bar is wide enough, put text inside
+                text_x = acc * 0.05
+                text_color = "white"
+                bbox_props = dict(
+                    facecolor=base_color,
+                    alpha=0.8,
+                    boxstyle="round,pad=0.2",
+                    edgecolor="none"
+                )
+            else:  # Otherwise put it outside
+                text_x = 0.02
+                text_color = "#2c3e50"
+                bbox_props = dict(
+                    facecolor="white",
+                    alpha=0.9,
+                    boxstyle="round,pad=0.2",
+                    edgecolor="lightgray",
+                    linewidth=0.5
+                )
+                
+            ax.text(
+                text_x,
+                i,
+                count_text,
+                va="center",
+                ha="left",
+                fontsize=10,
+                fontweight="bold",
+                color=text_color,
+                bbox=bbox_props
+            )
 
-        # Save figure
-        plt.tight_layout()
+        # Enhanced styling
+        ax.set_facecolor("#f8f9fa")
+        
+        # Enhanced grid
+        ax.grid(axis="x", linestyle="--", alpha=0.4, color="#6c757d", linewidth=0.8)
+        ax.set_axisbelow(True)
+
+        # Enhanced axis styling
+        ax.set_xlabel("Accuracy", fontsize=16, fontweight="bold", color="#2c3e50", labelpad=15)
+        ax.set_ylabel("Class", fontsize=16, fontweight="bold", color="#2c3e50", labelpad=15)
+
+        # Enhanced title with better typography
+        title_line1 = f"Per-Class Accuracy Analysis"
+        title_line2 = f"{display_model_name} • {display_domain}"
+        # ax.set_title(title_line1, fontsize=22, fontweight="bold", pad=15, color="#2c3e50")
+        ax.text(0.5, 1.08, title_line2, transform=ax.transAxes, 
+               fontsize=20, fontweight="medium", ha="center", 
+               color="#7f8c8d", style="italic")
+
+        # Enhanced y-axis
+        ax.set_yticks(y)
+        ax.set_yticklabels(sorted_display_classes, fontsize=14, fontweight="medium")
+        plt.setp(ax.get_yticklabels(), color="#2c3e50")
+        
+        # Enhanced x-axis
+        ax.set_xlim(0, 1.15)  # Extra space for labels
+        ax.set_xticks(np.arange(0, 1.1, 0.2))
+        ax.set_xticklabels([f"{x:.0%}" for x in np.arange(0, 1.1, 0.2)], 
+                          fontsize=12, fontweight="medium")
+        plt.setp(ax.get_xticklabels(), color="#2c3e50")
+
+        # Enhanced spines
+        for spine_name, spine in ax.spines.items():
+            if spine_name in ['left', 'bottom']:
+                spine.set_edgecolor("#dee2e6")
+                spine.set_linewidth(1.5)
+            else:
+                spine.set_visible(False)
+
+        # Add subtle border around the plot area
+        border_rect = plt.Rectangle((0, -0.5), 1.0, len(classes), 
+                                  fill=False, color="#dee2e6", linewidth=2, alpha=0.7)
+        ax.add_patch(border_rect)
+
+        # Add performance summary in a text box
+        avg_accuracy = np.mean(accuracy)
+        min_accuracy = np.min(accuracy)
+        max_accuracy = np.max(accuracy)
+        
+        summary_text = f"Average: {avg_accuracy:.1%}"
+        ax.text(0.98, 0.98, summary_text, transform=ax.transAxes,
+               fontsize=11, fontweight="medium",
+               verticalalignment="top", horizontalalignment="right",
+               bbox=dict(facecolor="white", alpha=0.9, boxstyle="round,pad=0.5",
+                        edgecolor="#dee2e6", linewidth=1))
+
+        # Enhanced save options
         fig_path = (
             self.output_dir / f"{domain}_{task_type}_{model_name}_class_accuracy.png"
         )
-        plt.savefig(fig_path)
-        plt.close()
+        plt.savefig(fig_path, dpi=300, bbox_inches='tight', pad_inches=0.3,
+                   facecolor='white', edgecolor='none')
+        plt.close(fig)
 
     def plot_all_domains_accuracy_comparison(self):
         """Create a single figure with subplots comparing accuracy across models for each domain."""
