@@ -498,7 +498,7 @@ def create_heatmap(true_labels, pred_labels, figsize=(10, 8), output_path=None):
     sns.set_style("whitegrid")
 
     # Create a more visually appealing heatmap
-    ax = sns.heatmap(
+    sns.heatmap(
         report.iloc[:-1, :].T,
         annot=True,
         fmt=".3f",
@@ -550,7 +550,7 @@ def create_confusion_matrix(
     sns.set_style("whitegrid")
 
     # Create a more visually appealing heatmap
-    ax = sns.heatmap(
+    sns.heatmap(
         cm_df,
         annot=True,
         fmt="d",

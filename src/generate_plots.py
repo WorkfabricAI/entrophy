@@ -609,7 +609,7 @@ class PlotGenerator:
                 class_counts = {}
                 for result in detailed_results:
                     true_class = result.get("true_class", "Unknown")
-                    predicted_class = result.get("predicted_class", "Unknown")
+                    result.get("predicted_class", "Unknown")
                     correct = result.get("correct", False)
 
                     if true_class not in class_counts:
