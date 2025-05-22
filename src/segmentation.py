@@ -11,7 +11,7 @@ import logging
 import os
 import re
 import time
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -299,7 +299,8 @@ class WorkflowSegmenter:
         elif self.provider == "huggingface":
             try:
                 import torch
-                from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+                from transformers import (AutoModelForCausalLM, AutoTokenizer,
+                                          pipeline)
             except ImportError:
                 raise ImportError(
                     "Transformers package not installed. Run `pip install transformers`."
@@ -327,15 +328,15 @@ class WorkflowSegmenter:
 
                 if gpu_ids and "," in gpu_ids:
                     logger.info(
-                        f"Multi-GPU: Model will be loaded with device_map='auto'"
+                        "Multi-GPU: Model will be loaded with device_map='auto'"
                     )
                     model_load_kwargs["device_map"] = "auto"
                 elif gpu_ids:
-                    logger.info(f"Single-GPU: Pipeline will target device 0")
+                    logger.info("Single-GPU: Pipeline will target device 0")
                     pipeline_init_kwargs["device"] = 0
                 else:
                     logger.info(
-                        f"No specific GPUs (user) & CUDA available: Using device_map='auto'"
+                        "No specific GPUs (user) & CUDA available: Using device_map='auto'"
                     )
                     model_load_kwargs["device_map"] = "auto"
             else:

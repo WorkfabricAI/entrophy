@@ -246,7 +246,8 @@ class WorkflowClassifier:
 
         elif self.provider == "huggingface":
             try:
-                from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+                from transformers import (AutoModelForCausalLM, AutoTokenizer,
+                                          pipeline)
             except ImportError:
                 raise ImportError(
                     "Transformers package not installed. Run `pip install transformers`."
@@ -274,17 +275,17 @@ class WorkflowClassifier:
 
                 if gpu_ids and "," in gpu_ids:
                     print(
-                        f"Multi-GPU: Model will be loaded with device_map='auto'. Pipeline will use model's device map."
+                        "Multi-GPU: Model will be loaded with device_map='auto'. Pipeline will use model's device map."
                     )
                     model_load_kwargs["device_map"] = "auto"
                 elif gpu_ids:
                     print(
-                        f"Single-GPU: Pipeline will target device 0 (relative to visible devices)."
+                        "Single-GPU: Pipeline will target device 0 (relative to visible devices)."
                     )
                     pipeline_init_kwargs["device"] = 0
                 else:
                     print(
-                        f"No specific GPUs (user) & CUDA available: Model will be loaded with device_map='auto'. Pipeline will use model's device map."
+                        "No specific GPUs (user) & CUDA available: Model will be loaded with device_map='auto'. Pipeline will use model's device map."
                     )
                     model_load_kwargs["device_map"] = "auto"
             else:
@@ -489,7 +490,7 @@ def create_heatmap(true_labels, pred_labels, figsize=(10, 8), output_path=None):
     try:
         report.drop(columns=["micro avg"], inplace=True)
     except:  # noqa: E722
-        pass
+        logger.debug('Encountered an exception dropping column `micro avg`.')
     report.rename(columns={"macro avg": "Average"}, inplace=True)
 
     plt.figure(figsize=figsize, dpi=300)
