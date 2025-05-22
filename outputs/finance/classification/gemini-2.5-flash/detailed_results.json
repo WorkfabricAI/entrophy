@@ -1,0 +1,656 @@
+[
+  {
+    "workflow_id": "00cb7476-2f82-45ac-bb4b-148b789869e1",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice dispatch",
+    "correct": true
+  },
+  {
+    "workflow_id": "0d30e8d7-d744-4e42-ab53-6b6aa76e8430",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Revenue accounting",
+    "correct": false
+  },
+  {
+    "workflow_id": "0fb18032-2e99-4150-883b-74854e1e0345",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "1026ebd7-fbd8-48d3-86f0-f0429911f94c",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": false
+  },
+  {
+    "workflow_id": "13e3ab03-498e-42ef-89e1-6d39069bfa07",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "14017116-9c66-4ab1-b64c-73a37d94514a",
+    "true_class": "Invoice processing",
+    "predicted_class": "Invoice processing",
+    "correct": true
+  },
+  {
+    "workflow_id": "1543d6b8-0755-41f0-8c3a-aa8c69127ddc",
+    "true_class": "Vendor onboarding",
+    "predicted_class": "Vendor onboarding",
+    "correct": true
+  },
+  {
+    "workflow_id": "17a0a3b8-47c9-4e4c-9c49-5ffd318733f8",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "19008b6e-d097-4d9e-95f4-d9bbf9879b9d",
+    "true_class": "Invoice accounting",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "1cdee515-01b9-4eb6-829d-3ba6fb958afc",
+    "true_class": "Invoice payment",
+    "predicted_class": "Invoice payment",
+    "correct": true
+  },
+  {
+    "workflow_id": "1e7d86dc-50a6-4762-a9be-7e0566cc5b07",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Revenue accounting",
+    "correct": false
+  },
+  {
+    "workflow_id": "251a012f-64de-4d28-8895-d85ec29425ee",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "25a4ec6d-c039-4fde-b9ac-1debe3b27673",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": false
+  },
+  {
+    "workflow_id": "2a939208-d51f-4484-8c02-7da1a629dabc",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice payment",
+    "correct": false
+  },
+  {
+    "workflow_id": "2ae5f773-01c8-4188-ac4e-b39486f0b834",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice dispatch",
+    "correct": true
+  },
+  {
+    "workflow_id": "2e2b9c10-c29b-4322-b1ed-ce7a3ad0873c",
+    "true_class": "Revenue accounting",
+    "predicted_class": "Revenue accounting",
+    "correct": true
+  },
+  {
+    "workflow_id": "2faf5407-2c84-4bb2-9241-b4b3a2c24819",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": false
+  },
+  {
+    "workflow_id": "2fb204db-ed42-4cfc-a0db-f52dc003a3e3",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice payment",
+    "correct": false
+  },
+  {
+    "workflow_id": "32075053-5337-47ab-95e4-d45c48aa4bb2",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Revenue accounting",
+    "correct": false
+  },
+  {
+    "workflow_id": "32a8b032-73a9-4cd3-911a-ba5b04191c55",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice payment",
+    "correct": false
+  },
+  {
+    "workflow_id": "369c9ad3-3101-4313-bede-42ca0b2d7589",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "36eb8da3-b1e1-4561-a19f-20e2923647ae",
+    "true_class": "Invoice accounting",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "37439a9d-f2b4-4ae3-bd4f-b49f648d0e6f",
+    "true_class": "Invoice accounting",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "408d697b-2b66-4d25-a204-ec478c3c34aa",
+    "true_class": "Invoice accounting",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "4196b6a7-3f89-472f-afb2-1e843e00f1b7",
+    "true_class": "Purchase order creation",
+    "predicted_class": "Purchase order creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "4254b837-fefb-41c8-ac89-1a8aaf7ea176",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "4603d7c0-4479-4c0a-a464-b158f1529c0b",
+    "true_class": "Invoice payment",
+    "predicted_class": "Invoice payment",
+    "correct": true
+  },
+  {
+    "workflow_id": "466fb84f-4c32-4334-bc4f-f6310b6007d5",
+    "true_class": "Revenue accounting",
+    "predicted_class": "Revenue accounting",
+    "correct": true
+  },
+  {
+    "workflow_id": "46c7237a-c136-4f75-a5cb-71c3c595938f",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "499d1f93-62d8-4efe-96b2-8e86e33c2a14",
+    "true_class": "Payment collection",
+    "predicted_class": "Payment collection",
+    "correct": true
+  },
+  {
+    "workflow_id": "4b15f7fc-22de-4c2e-bcd1-bb26888c9849",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": false
+  },
+  {
+    "workflow_id": "4d9eee17-7e44-4d9a-9c2d-9462696379f6",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "4f7c0ce6-d9b8-4daf-b53f-fc3b2154d679",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "522a3cd0-c75d-46f2-99cb-9093154fd6fb",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "5504aa75-da5c-4f5b-9eb1-52442bf8b649",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice payment",
+    "correct": false
+  },
+  {
+    "workflow_id": "567279a4-158a-47d8-9c59-d38893985d9a",
+    "true_class": "Invoice accounting",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "56d583f9-aaa8-4495-88ec-d08a3cd303ef",
+    "true_class": "Purchase order creation",
+    "predicted_class": "Purchase order creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "56fb9a96-dc2a-41c2-8a0f-a658ebcf11d4",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "59a38ed6-05e1-42c4-9730-2979a9aeb4a8",
+    "true_class": "Vendor onboarding",
+    "predicted_class": "Vendor onboarding",
+    "correct": true
+  },
+  {
+    "workflow_id": "5a747762-0555-4e0b-9ab9-5471c40da788",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "5af23e1c-5de1-4a3a-be0a-d12f49d1483c",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": false
+  },
+  {
+    "workflow_id": "5e8cbeb4-9804-4c65-a30b-3752fd9835d1",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice payment",
+    "correct": false
+  },
+  {
+    "workflow_id": "5ec2e557-dd3e-430d-b984-f23936d103ec",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "5ede3530-38d9-459f-8615-29f369eb20b2",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "6081076c-35b8-400c-94a2-2a861442342c",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice dispatch",
+    "correct": true
+  },
+  {
+    "workflow_id": "62d92ad6-6c7e-4f6a-8ad1-44e7200c29de",
+    "true_class": "Invoice accounting",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "6355057c-19d5-4765-9336-f6bef84da422",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "67262701-6d66-492d-af78-51789e08572e",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "67311503-514c-453c-8b89-c05acc54c5a0",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Financial review of contract",
+    "correct": true
+  },
+  {
+    "workflow_id": "6c36810a-df10-4600-938e-4453ae89fc7a",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "6d494221-0266-43c4-afa6-7beaa3cb79e5",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "6eb482a6-eddb-42a0-8961-00712a0e92d5",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "6fd29525-bb8d-4d98-af31-da852c0aa6f0",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "703277b8-74f4-4b23-b9cf-782fcb98fa17",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Revenue accounting",
+    "correct": false
+  },
+  {
+    "workflow_id": "70c7c369-9bb3-41f1-aca6-efb3691600bf",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "722db123-c803-4b52-9001-0edba0cbf21c",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "7366b8ed-c64b-414f-91bc-54235ddb0218",
+    "true_class": "Purchase order creation",
+    "predicted_class": "Purchase order creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "76589d60-9d8b-4eec-b2e2-abd83b07b7bd",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": false
+  },
+  {
+    "workflow_id": "78e8e771-046f-423d-a4ca-c60392b3f68b",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "80ad77b4-4914-4b78-b0d6-b14ac6324fa2",
+    "true_class": "Vendor onboarding",
+    "predicted_class": "Vendor onboarding",
+    "correct": true
+  },
+  {
+    "workflow_id": "868f079a-a05c-42dd-86be-8f9e82c2d764",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "87e825c4-7132-40c8-ad2d-00e1f7ccd411",
+    "true_class": "Purchase order creation",
+    "predicted_class": "Purchase order creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "88dd8c7e-e303-4d83-87ca-5f68fbba1763",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "893108a8-8598-48b0-b298-8deef7bb156c",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "8a37135f-391f-44a8-8978-4df159532cf1",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "8c8aea04-a070-42a0-ab5e-382aa0a83d1e",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "93fb8e1f-1474-410a-8e35-099580384651",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "9636f38a-edec-4c23-a8c2-5c924444be44",
+    "true_class": "Purchase order creation",
+    "predicted_class": "Purchase order creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "9877ce44-4684-4eae-873a-dcb484416acc",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice payment",
+    "correct": false
+  },
+  {
+    "workflow_id": "98869d22-510c-4cc5-91f5-2e20aba116dd",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "98db46b9-318b-42ff-b510-a1b52671b37a",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "9a63c492-36ca-4847-836d-4159e25396b5",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "a03fe0a8-5cc2-4924-a5c6-a534168cee2b",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Purchase order creation",
+    "correct": false
+  },
+  {
+    "workflow_id": "a11c3abd-5bcd-416e-9c61-fcc04c3be4a5",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "a1f20b29-bd95-420c-a1e5-fe42f74e0090",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "a88a6c14-bda5-4165-8a27-4b3a4157bb43",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "acccac72-969d-4ea6-8056-2149873fabbc",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice payment",
+    "correct": false
+  },
+  {
+    "workflow_id": "b1e957a4-08e4-4995-8b37-768d7c136e10",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Purchase order creation",
+    "correct": false
+  },
+  {
+    "workflow_id": "b50dd92c-d0ff-437d-a09b-d028b7ebff73",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice payment",
+    "correct": false
+  },
+  {
+    "workflow_id": "b6c8bc3e-6d75-4539-b195-20f24c0e0bfb",
+    "true_class": "Invoice accounting",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "b8aa4ac3-df84-4c1d-8bb4-ff441594d5ed",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "bcc02897-1ae6-4d8d-98d0-975f4a172248",
+    "true_class": "Invoice processing",
+    "predicted_class": "Invoice processing",
+    "correct": true
+  },
+  {
+    "workflow_id": "bf2c61b1-f35e-40df-9077-e06a851e1e89",
+    "true_class": "Purchase order creation",
+    "predicted_class": "Purchase order creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "c31eb7e5-55a6-48ba-808a-bc1e531b6295",
+    "true_class": "Payment collection",
+    "predicted_class": "Payment collection",
+    "correct": true
+  },
+  {
+    "workflow_id": "c58d2e3a-3e8f-40c1-8b37-6ee65f53bfc4",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "c6d7c428-8fd0-493b-bb0e-a9597c5cf1bf",
+    "true_class": "Invoice processing",
+    "predicted_class": "Vendor onboarding",
+    "correct": false
+  },
+  {
+    "workflow_id": "cbe33a03-a96a-49c5-97bf-1c03c53d21b0",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": false
+  },
+  {
+    "workflow_id": "cc0cb44f-96a6-4dcf-822b-9227c06f45bb",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice payment",
+    "correct": false
+  },
+  {
+    "workflow_id": "cfc96774-a5eb-4412-a7d5-ee1c66124d42",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Purchase order creation",
+    "correct": false
+  },
+  {
+    "workflow_id": "d097cfa5-0688-4b9a-9de3-eac384f8d6b4",
+    "true_class": "Invoice payment",
+    "predicted_class": "Invoice payment",
+    "correct": true
+  },
+  {
+    "workflow_id": "d1850274-a8c3-45b7-a65d-2f260f671882",
+    "true_class": "Invoice accounting",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "d3985ee7-d3f6-4143-9b9a-a726bc7b0c6c",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Purchase order creation",
+    "correct": false
+  },
+  {
+    "workflow_id": "d55e99e9-340e-44fe-bbf4-108ca82aae9b",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "da1fe5c4-de6e-4339-ba8e-01ed39ac649f",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "de686767-0c18-4659-a76b-9f9197291853",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "e08d1002-2b56-418d-9b92-fd36994dbf54",
+    "true_class": "Invoice dispatch",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "e1493ad1-25b6-418f-a77c-954201e5dd0c",
+    "true_class": "Purchase order creation",
+    "predicted_class": "Purchase order creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "e26cf1ba-388e-4528-b19d-27c038a8c646",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice payment",
+    "correct": false
+  },
+  {
+    "workflow_id": "e273d6de-cb94-45f6-b08b-5aef8e54b71d",
+    "true_class": "Invoice accounting",
+    "predicted_class": "Invoice processing",
+    "correct": false
+  },
+  {
+    "workflow_id": "e5c090d6-eebe-4ce9-8da7-dc24410a7da0",
+    "true_class": "Purchase order creation",
+    "predicted_class": "Purchase order creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "e80ef73f-d907-4f13-bd4f-270cb2f644da",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Financial review of contract",
+    "correct": true
+  },
+  {
+    "workflow_id": "e81f198a-114b-4558-99e4-6449c0f99e31",
+    "true_class": "Purchase order creation",
+    "predicted_class": "Purchase order creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "e8d3b142-935f-4c00-b1d8-28c1ff404d1e",
+    "true_class": "Contract updates and forwarding for finance approval",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": true
+  },
+  {
+    "workflow_id": "eab4ce7e-8096-4e36-93fa-582eaafb62d7",
+    "true_class": "Invoice creation",
+    "predicted_class": "Invoice creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "f222bb0c-27aa-4996-85e0-a2d2c099f68c",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Financial review of contract",
+    "correct": true
+  },
+  {
+    "workflow_id": "fc608330-8d67-4c50-abcf-c51d3ef09efb",
+    "true_class": "Purchase order creation",
+    "predicted_class": "Purchase order creation",
+    "correct": true
+  },
+  {
+    "workflow_id": "fcb6551e-c88b-4059-8c2a-37764a497684",
+    "true_class": "Financial review of contract",
+    "predicted_class": "Contract updates and forwarding for finance approval",
+    "correct": false
+  },
+  {
+    "workflow_id": "fcd6bd9a-ea99-418c-b6b1-577f5c7a78ee",
+    "true_class": "Revenue accounting",
+    "predicted_class": "Revenue accounting",
+    "correct": true
+  },
+  {
+    "workflow_id": "fec45ef7-e25f-4ed1-9bf3-b67448cb4ef3",
+    "true_class": "Payment collection",
+    "predicted_class": "Invoice payment",
+    "correct": false
+  }
+]

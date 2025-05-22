@@ -1,0 +1,65 @@
+{
+    "Employee offboarding":{
+        "Employee offboarding":15,
+        "Employment record reporting":1,
+        "Job creation":0,
+        "Employment letter generation":15,
+        "Monthly leave report":0,
+        "Candidate sourcing and screening":0,
+        "Format Error":0
+    },
+    "Employment record reporting":{
+        "Employee offboarding":0,
+        "Employment record reporting":3,
+        "Job creation":0,
+        "Employment letter generation":0,
+        "Monthly leave report":0,
+        "Candidate sourcing and screening":0,
+        "Format Error":0
+    },
+    "Job creation":{
+        "Employee offboarding":0,
+        "Employment record reporting":0,
+        "Job creation":21,
+        "Employment letter generation":0,
+        "Monthly leave report":0,
+        "Candidate sourcing and screening":0,
+        "Format Error":0
+    },
+    "Employment letter generation":{
+        "Employee offboarding":0,
+        "Employment record reporting":0,
+        "Job creation":0,
+        "Employment letter generation":0,
+        "Monthly leave report":0,
+        "Candidate sourcing and screening":0,
+        "Format Error":0
+    },
+    "Monthly leave report":{
+        "Employee offboarding":0,
+        "Employment record reporting":0,
+        "Job creation":0,
+        "Employment letter generation":0,
+        "Monthly leave report":3,
+        "Candidate sourcing and screening":0,
+        "Format Error":0
+    },
+    "Candidate sourcing and screening":{
+        "Employee offboarding":0,
+        "Employment record reporting":0,
+        "Job creation":0,
+        "Employment letter generation":0,
+        "Monthly leave report":0,
+        "Candidate sourcing and screening":14,
+        "Format Error":0
+    },
+    "Format Error":{
+        "Employee offboarding":0,
+        "Employment record reporting":0,
+        "Job creation":0,
+        "Employment letter generation":0,
+        "Monthly leave report":1,
+        "Candidate sourcing and screening":0,
+        "Format Error":0
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "SOW kickoff and order form creation":{
+        "SOW kickoff and order form creation":6,
+        "Contract kickoff":8,
+        "Legal finalization and MSA execution":0,
+        "MSA contract iteration":0,
+        "SOW iteration":5,
+        "First pass contract review":0,
+        "Legal finalization and SOW execution":6
+    },
+    "Contract kickoff":{
+        "SOW kickoff and order form creation":0,
+        "Contract kickoff":0,
+        "Legal finalization and MSA execution":0,
+        "MSA contract iteration":0,
+        "SOW iteration":0,
+        "First pass contract review":0,
+        "Legal finalization and SOW execution":0
+    },
+    "Legal finalization and MSA execution":{
+        "SOW kickoff and order form creation":0,
+        "Contract kickoff":1,
+        "Legal finalization and MSA execution":0,
+        "MSA contract iteration":0,
+        "SOW iteration":3,
+        "First pass contract review":1,
+        "Legal finalization and SOW execution":2
+    },
+    "MSA contract iteration":{
+        "SOW kickoff and order form creation":0,
+        "Contract kickoff":0,
+        "Legal finalization and MSA execution":0,
+        "MSA contract iteration":0,
+        "SOW iteration":0,
+        "First pass contract review":0,
+        "Legal finalization and SOW execution":0
+    },
+    "SOW iteration":{
+        "SOW kickoff and order form creation":9,
+        "Contract kickoff":5,
+        "Legal finalization and MSA execution":0,
+        "MSA contract iteration":1,
+        "SOW iteration":7,
+        "First pass contract review":0,
+        "Legal finalization and SOW execution":0
+    },
+    "First pass contract review":{
+        "SOW kickoff and order form creation":1,
+        "Contract kickoff":0,
+        "Legal finalization and MSA execution":0,
+        "MSA contract iteration":0,
+        "SOW iteration":0,
+        "First pass contract review":0,
+        "Legal finalization and SOW execution":0
+    },
+    "Legal finalization and SOW execution":{
+        "SOW kickoff and order form creation":4,
+        "Contract kickoff":8,
+        "Legal finalization and MSA execution":1,
+        "MSA contract iteration":0,
+        "SOW iteration":5,
+        "First pass contract review":0,
+        "Legal finalization and SOW execution":29
+    }
+}

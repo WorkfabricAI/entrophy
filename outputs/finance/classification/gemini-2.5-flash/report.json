@@ -1,0 +1,80 @@
+{
+    "Revenue accounting":{
+        "precision":0.4285714286,
+        "recall":1.0,
+        "f1-score":0.6,
+        "support":3.0
+    },
+    "Purchase order creation":{
+        "precision":0.7142857143,
+        "recall":1.0,
+        "f1-score":0.8333333333,
+        "support":10.0
+    },
+    "Invoice dispatch":{
+        "precision":1.0,
+        "recall":0.2142857143,
+        "f1-score":0.3529411765,
+        "support":14.0
+    },
+    "Vendor onboarding":{
+        "precision":0.75,
+        "recall":1.0,
+        "f1-score":0.8571428571,
+        "support":3.0
+    },
+    "Invoice processing":{
+        "precision":0.0869565217,
+        "recall":0.6666666667,
+        "f1-score":0.1538461538,
+        "support":3.0
+    },
+    "Contract updates and forwarding for finance approval":{
+        "precision":0.6923076923,
+        "recall":0.8181818182,
+        "f1-score":0.75,
+        "support":22.0
+    },
+    "Payment collection":{
+        "precision":1.0,
+        "recall":0.1428571429,
+        "f1-score":0.25,
+        "support":14.0
+    },
+    "Invoice accounting":{
+        "precision":0.0,
+        "recall":0.0,
+        "f1-score":0.0,
+        "support":9.0
+    },
+    "Invoice payment":{
+        "precision":0.2142857143,
+        "recall":1.0,
+        "f1-score":0.3529411765,
+        "support":3.0
+    },
+    "Invoice creation":{
+        "precision":1.0,
+        "recall":1.0,
+        "f1-score":1.0,
+        "support":13.0
+    },
+    "Financial review of contract":{
+        "precision":1.0,
+        "recall":0.2,
+        "f1-score":0.3333333333,
+        "support":15.0
+    },
+    "accuracy":{
+        "precision":0.5504587156,
+        "recall":0.5504587156,
+        "f1-score":0.5504587156,
+        "support":0.5504587156
+    },
+    "Average":{
+        "precision":0.6260370065,
+        "recall":0.6401810311,
+        "f1-score":0.4985034573,
+        "support":109.0
+    }
+}

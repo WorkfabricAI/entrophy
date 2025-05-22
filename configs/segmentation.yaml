@@ -1,0 +1,26 @@
+# Workflow Classification Configuration
+
+# Data settings
+data_path: PATH_TO_DATA_FILE # e.g. data/json/legal.json
+output_dir: PATH_TO_OUTPUT_DIR # e.g. outputs/legal
+
+# Model settings
+model_name: MODEL_NAME # e.g. Qwen/Qwen3-32B
+batch_size: 8 # ONLY USED FOR LOCAL MODELS
+
+min_workflows: MIN_WORKFLOWS # e.g. 2
+max_workflows: MAX_WORKFLOWS # e.g. 5
+num_samples: NUM_SAMPLES # e.g. 100
+tolerance: TOLERANCE # e.g. 3
+
+# Provider settings
+provider: PROVIDER # e.g. openai, anthropic, google, huggingface
+api_key: API_KEY
+api_base: null  # Set to custom base URL if needed
+max_tokens: 8000
+temperature: 0.6
+wait_time: 15.0
+
+# Hardware settings
+seed: 2404 # Random seed for reproducibility
+gpus: "0"  # Use comma-separated list for multiple GPUs, e.g. "0,1" 

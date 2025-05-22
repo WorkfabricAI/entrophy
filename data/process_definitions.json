@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Contract kickoff",
+    "description": "Legal receives request to contract for a customer, reviews material, checks if a \"Master Service Agreement\" or MSA is in place, or seeks to review the current one. Post creation of an MSA, the same process is carried out for a \"Statement of Work\" or SOW for the services or goods that need to be provided/sold to the customer."
+  },
+  {
+    "name": "First pass contract review",
+    "description": "Legal reviews a Master Service Agreement, communicating with clauses that need further validation with other teams, communicates with customer's legal team on terms."
+  },
+  {
+    "name": "MSA Contract iteration",
+    "description": "Legal iterates with stakeholders on clarifications received from customer for finalizing contract."
+  },
+  {
+    "name": "Legal finalization and MSA execution",
+    "description": "Legal finalizes the contract for the MSA via a digital signature between required parties"
+  },
+  {
+    "name": "SOW kickoff and Order form creation",
+    "description": "An order form is set up which is reviewed to check if the right MSA is referenced and other terms are referenced. SOWs are set up post this for every 'service' or 'goods' to be sold to the customer."
+  },
+  {
+    "name": "SOW iteration",
+    "description": "The terms of the SOW are iterated with the customer."
+  },
+  {
+    "name": "Legal finalization and SOW execution",
+    "description": "Legal finalizes the contract for the SOW via a digital signature between required parties and passes on to sales ops for updates in the CRM as an \"opportunity\"."
+  },
+  {
+    "name": "Contract updates and forwarding for Finance Approval",
+    "description": "Sales Ops team updates the opportunity in the CRM with all relevant contract details. They add purchase order (PO) details and pass the contract on to Finance team for approval"
+  },
+  {
+    "name": "Financial review of contract",
+    "description": "Finance team receives request to review the contract on the CRM, validates the terms and details including the PO details and approves / rejects it as expected."
+  },
+  {
+    "name": "Invoice creation",
+    "description": "Create a new invoice in the accounting application to be raised to the customer updating details according to the PO"
+  },
+  {
+    "name": "Invoice dispatch",
+    "description": "The invoice created for receiving monies is forwarded to the customer (typically by email or a customer portal)"
+  },
+  {
+    "name": "Payment collection",
+    "description": "Payment received from the customer is recorded in the accounting application. An 'aging report' is created to maintain a record of outstanding payments."
+  },
+  {
+    "name": "Revenue accounting",
+    "description": "Generate / update revenue records in the reporting file, including received payments, new customer contracts etc."
+  },
+  {
+    "name": "Purchase Order creation",
+    "description": "Finance team seeks budget approval for a purchase requisition (PR) and creates a Purchase Order (PO), passing it on for approval."
+  },
+  {
+    "name": "Vendor Onboarding",
+    "description": "Finance team creates records for a vendor and updates relevant details in the accounting application."
+  },
+  {
+    "name": "Invoice processing",
+    "description": "When an invoice is received, Finance team reviews it against the raised PO and then forwards it for approval from relevant stakeholders."
+  },
+  {
+    "name": "Invoice accounting",
+    "description": "Extract approved invoice details and compute tax / other details and prepare a payment working sheet."
+  },
+  {
+    "name": "Invoice payment",
+    "description": "Schedule the invoice for payment, and post payment send the payment advice to the vendor. Update relevant payment records in the accounting tool."
+  },
+  {
+    "name": "Job Creation",
+    "description": "Create a new job or copy an existing job and update it in the recruiting portal. Chiefly, the job description must be updated."
+  },
+  {
+    "name": "Candidate sourcing and screening",
+    "description": "Update a received resume from a job application for a job in the recruiting portal, screen the resume for fitment and forward to interviewing stage."
+  },
+  {
+    "name": "Monthly leave reporting",
+    "description": "Download employee leave record information from the people management portal. Verify the details in the report and adjust against prior month reports. Publish the report for compliance checks."
+  },
+  {
+    "name": "Employment record reporting",
+    "description": "Download employment records from the people management portal. Match against the employee exit records and create a consolidated view."
+  },
+  {
+    "name": "Employee offboarding",
+    "description": "Process an exit request for an employee, notify requisite departments for managing access records for the employee, generate a relieving and resignation letter"
+  },
+  {
+    "name": "Employment letter generation",
+    "description": "Generate a letter in a fixed template certifying employment details and updating the same in the template. Sign the document using digital signature."
+  }
+]

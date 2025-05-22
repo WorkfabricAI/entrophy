@@ -1,0 +1,4388 @@
+{
+  "individual_results": [
+    {
+      "sequence_id": "sequence_0",
+      "num_workflows": 2,
+      "sequence_length": 746,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 409
+        },
+        {
+          "start_index": 410,
+          "end_index": 745
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 410
+        },
+        {
+          "start_index": 412,
+          "end_index": 745
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_1",
+      "num_workflows": 2,
+      "sequence_length": 843,
+      "boundary_precision": 0.0,
+      "boundary_recall": 0.0,
+      "boundary_f1": 0,
+      "edit_distance": 9,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 632
+        },
+        {
+          "start_index": 633,
+          "end_index": 842
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 13
+        },
+        {
+          "start_index": 14,
+          "end_index": 30
+        },
+        {
+          "start_index": 31,
+          "end_index": 33
+        },
+        {
+          "start_index": 34,
+          "end_index": 70
+        },
+        {
+          "start_index": 71,
+          "end_index": 74
+        },
+        {
+          "start_index": 75,
+          "end_index": 465
+        },
+        {
+          "start_index": 466,
+          "end_index": 639
+        },
+        {
+          "start_index": 640,
+          "end_index": 719
+        },
+        {
+          "start_index": 720,
+          "end_index": 723
+        },
+        {
+          "start_index": 724,
+          "end_index": 842
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_2",
+      "num_workflows": 2,
+      "sequence_length": 503,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 218
+        },
+        {
+          "start_index": 219,
+          "end_index": 502
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 93
+        },
+        {
+          "start_index": 94,
+          "end_index": 218
+        },
+        {
+          "start_index": 219,
+          "end_index": 502
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_3",
+      "num_workflows": 3,
+      "sequence_length": 441,
+      "boundary_precision": 0.25,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.3333333333333333,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 205
+        },
+        {
+          "start_index": 206,
+          "end_index": 368
+        },
+        {
+          "start_index": 369,
+          "end_index": 440
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 105
+        },
+        {
+          "start_index": 106,
+          "end_index": 168
+        },
+        {
+          "start_index": 169,
+          "end_index": 193
+        },
+        {
+          "start_index": 194,
+          "end_index": 368
+        },
+        {
+          "start_index": 369,
+          "end_index": 440
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_4",
+      "num_workflows": 3,
+      "sequence_length": 1313,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 320
+        },
+        {
+          "start_index": 321,
+          "end_index": 1105
+        },
+        {
+          "start_index": 1106,
+          "end_index": 1312
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 314
+        },
+        {
+          "start_index": 322,
+          "end_index": 1105
+        },
+        {
+          "start_index": 1106,
+          "end_index": 1312
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_5",
+      "num_workflows": 5,
+      "sequence_length": 1084,
+      "boundary_precision": 0,
+      "boundary_recall": 0.0,
+      "boundary_f1": 0,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 335
+        },
+        {
+          "start_index": 336,
+          "end_index": 445
+        },
+        {
+          "start_index": 446,
+          "end_index": 654
+        },
+        {
+          "start_index": 655,
+          "end_index": 854
+        },
+        {
+          "start_index": 855,
+          "end_index": 1083
+        }
+      ],
+      "pred_segments": []
+    },
+    {
+      "sequence_id": "sequence_6",
+      "num_workflows": 3,
+      "sequence_length": 710,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 409
+        },
+        {
+          "start_index": 410,
+          "end_index": 597
+        },
+        {
+          "start_index": 598,
+          "end_index": 709
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 409
+        },
+        {
+          "start_index": 410,
+          "end_index": 516
+        },
+        {
+          "start_index": 517,
+          "end_index": 598
+        },
+        {
+          "start_index": 599,
+          "end_index": 709
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_7",
+      "num_workflows": 5,
+      "sequence_length": 991,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 110
+        },
+        {
+          "start_index": 111,
+          "end_index": 323
+        },
+        {
+          "start_index": 324,
+          "end_index": 677
+        },
+        {
+          "start_index": 678,
+          "end_index": 787
+        },
+        {
+          "start_index": 788,
+          "end_index": 990
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 102
+        },
+        {
+          "start_index": 111,
+          "end_index": 252
+        },
+        {
+          "start_index": 323,
+          "end_index": 676
+        },
+        {
+          "start_index": 678,
+          "end_index": 788
+        },
+        {
+          "start_index": 789,
+          "end_index": 860
+        },
+        {
+          "start_index": 861,
+          "end_index": 919
+        },
+        {
+          "start_index": 920,
+          "end_index": 990
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_8",
+      "num_workflows": 2,
+      "sequence_length": 496,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 296
+        },
+        {
+          "start_index": 297,
+          "end_index": 495
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 295
+        },
+        {
+          "start_index": 296,
+          "end_index": 495
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_9",
+      "num_workflows": 5,
+      "sequence_length": 968,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 109
+        },
+        {
+          "start_index": 110,
+          "end_index": 502
+        },
+        {
+          "start_index": 503,
+          "end_index": 711
+        },
+        {
+          "start_index": 712,
+          "end_index": 841
+        },
+        {
+          "start_index": 842,
+          "end_index": 967
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 109
+        },
+        {
+          "start_index": 110,
+          "end_index": 501
+        },
+        {
+          "start_index": 503,
+          "end_index": 589
+        },
+        {
+          "start_index": 590,
+          "end_index": 699
+        },
+        {
+          "start_index": 712,
+          "end_index": 735
+        },
+        {
+          "start_index": 737,
+          "end_index": 803
+        },
+        {
+          "start_index": 842,
+          "end_index": 967
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_10",
+      "num_workflows": 4,
+      "sequence_length": 1076,
+      "boundary_precision": 0.0,
+      "boundary_recall": 0.0,
+      "boundary_f1": 0,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 202
+        },
+        {
+          "start_index": 203,
+          "end_index": 320
+        },
+        {
+          "start_index": 321,
+          "end_index": 438
+        },
+        {
+          "start_index": 439,
+          "end_index": 1075
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 181
+        },
+        {
+          "start_index": 182,
+          "end_index": 446
+        },
+        {
+          "start_index": 447,
+          "end_index": 1075
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_11",
+      "num_workflows": 4,
+      "sequence_length": 562,
+      "boundary_precision": 0.6,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.7499999999999999,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 148
+        },
+        {
+          "start_index": 149,
+          "end_index": 222
+        },
+        {
+          "start_index": 223,
+          "end_index": 441
+        },
+        {
+          "start_index": 442,
+          "end_index": 561
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 148
+        },
+        {
+          "start_index": 149,
+          "end_index": 222
+        },
+        {
+          "start_index": 223,
+          "end_index": 330
+        },
+        {
+          "start_index": 331,
+          "end_index": 380
+        },
+        {
+          "start_index": 381,
+          "end_index": 441
+        },
+        {
+          "start_index": 442,
+          "end_index": 561
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_12",
+      "num_workflows": 2,
+      "sequence_length": 427,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 296
+        },
+        {
+          "start_index": 297,
+          "end_index": 426
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 295
+        },
+        {
+          "start_index": 296,
+          "end_index": 426
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_13",
+      "num_workflows": 4,
+      "sequence_length": 887,
+      "boundary_precision": 0.6,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.7499999999999999,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 116
+        },
+        {
+          "start_index": 117,
+          "end_index": 345
+        },
+        {
+          "start_index": 346,
+          "end_index": 535
+        },
+        {
+          "start_index": 536,
+          "end_index": 886
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 116
+        },
+        {
+          "start_index": 117,
+          "end_index": 203
+        },
+        {
+          "start_index": 204,
+          "end_index": 269
+        },
+        {
+          "start_index": 270,
+          "end_index": 345
+        },
+        {
+          "start_index": 346,
+          "end_index": 536
+        },
+        {
+          "start_index": 537,
+          "end_index": 886
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_14",
+      "num_workflows": 2,
+      "sequence_length": 362,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 0,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 162
+        },
+        {
+          "start_index": 163,
+          "end_index": 361
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 162
+        },
+        {
+          "start_index": 163,
+          "end_index": 361
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_15",
+      "num_workflows": 3,
+      "sequence_length": 487,
+      "boundary_precision": 0.25,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.3333333333333333,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 73
+        },
+        {
+          "start_index": 74,
+          "end_index": 273
+        },
+        {
+          "start_index": 274,
+          "end_index": 486
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 67
+        },
+        {
+          "start_index": 68,
+          "end_index": 164
+        },
+        {
+          "start_index": 170,
+          "end_index": 222
+        },
+        {
+          "start_index": 223,
+          "end_index": 267
+        },
+        {
+          "start_index": 274,
+          "end_index": 486
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_16",
+      "num_workflows": 2,
+      "sequence_length": 901,
+      "boundary_precision": 0.0,
+      "boundary_recall": 0.0,
+      "boundary_f1": 0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 782
+        },
+        {
+          "start_index": 783,
+          "end_index": 900
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 777
+        },
+        {
+          "start_index": 778,
+          "end_index": 900
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_17",
+      "num_workflows": 3,
+      "sequence_length": 1021,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 0,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 109
+        },
+        {
+          "start_index": 110,
+          "end_index": 235
+        },
+        {
+          "start_index": 236,
+          "end_index": 1020
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 109
+        },
+        {
+          "start_index": 110,
+          "end_index": 235
+        },
+        {
+          "start_index": 236,
+          "end_index": 1020
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_18",
+      "num_workflows": 4,
+      "sequence_length": 1174,
+      "boundary_precision": 0.75,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8571428571428571,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 320
+        },
+        {
+          "start_index": 321,
+          "end_index": 370
+        },
+        {
+          "start_index": 371,
+          "end_index": 392
+        },
+        {
+          "start_index": 393,
+          "end_index": 1173
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 314
+        },
+        {
+          "start_index": 315,
+          "end_index": 320
+        },
+        {
+          "start_index": 321,
+          "end_index": 369
+        },
+        {
+          "start_index": 370,
+          "end_index": 391
+        },
+        {
+          "start_index": 392,
+          "end_index": 1173
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_19",
+      "num_workflows": 4,
+      "sequence_length": 867,
+      "boundary_precision": 0.4,
+      "boundary_recall": 0.6666666666666666,
+      "boundary_f1": 0.5,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 119
+        },
+        {
+          "start_index": 120,
+          "end_index": 455
+        },
+        {
+          "start_index": 456,
+          "end_index": 637
+        },
+        {
+          "start_index": 638,
+          "end_index": 866
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 119
+        },
+        {
+          "start_index": 120,
+          "end_index": 454
+        },
+        {
+          "start_index": 455,
+          "end_index": 543
+        },
+        {
+          "start_index": 544,
+          "end_index": 621
+        },
+        {
+          "start_index": 622,
+          "end_index": 726
+        },
+        {
+          "start_index": 727,
+          "end_index": 866
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_20",
+      "num_workflows": 5,
+      "sequence_length": 913,
+      "boundary_precision": 0.6,
+      "boundary_recall": 0.75,
+      "boundary_f1": 0.6666666666666665,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 206
+        },
+        {
+          "start_index": 207,
+          "end_index": 317
+        },
+        {
+          "start_index": 318,
+          "end_index": 505
+        },
+        {
+          "start_index": 506,
+          "end_index": 794
+        },
+        {
+          "start_index": 795,
+          "end_index": 912
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 100
+        },
+        {
+          "start_index": 207,
+          "end_index": 277
+        },
+        {
+          "start_index": 325,
+          "end_index": 414
+        },
+        {
+          "start_index": 416,
+          "end_index": 501
+        },
+        {
+          "start_index": 506,
+          "end_index": 793
+        },
+        {
+          "start_index": 794,
+          "end_index": 912
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_21",
+      "num_workflows": 5,
+      "sequence_length": 815,
+      "boundary_precision": 0.3333333333333333,
+      "boundary_recall": 0.75,
+      "boundary_f1": 0.46153846153846156,
+      "edit_distance": 7,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 109
+        },
+        {
+          "start_index": 110,
+          "end_index": 258
+        },
+        {
+          "start_index": 259,
+          "end_index": 361
+        },
+        {
+          "start_index": 362,
+          "end_index": 682
+        },
+        {
+          "start_index": 683,
+          "end_index": 814
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 75
+        },
+        {
+          "start_index": 76,
+          "end_index": 91
+        },
+        {
+          "start_index": 92,
+          "end_index": 109
+        },
+        {
+          "start_index": 110,
+          "end_index": 142
+        },
+        {
+          "start_index": 143,
+          "end_index": 258
+        },
+        {
+          "start_index": 259,
+          "end_index": 283
+        },
+        {
+          "start_index": 284,
+          "end_index": 359
+        },
+        {
+          "start_index": 360,
+          "end_index": 677
+        },
+        {
+          "start_index": 678,
+          "end_index": 717
+        },
+        {
+          "start_index": 718,
+          "end_index": 814
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_22",
+      "num_workflows": 2,
+      "sequence_length": 564,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 350
+        },
+        {
+          "start_index": 351,
+          "end_index": 563
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 349
+        },
+        {
+          "start_index": 350,
+          "end_index": 563
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_23",
+      "num_workflows": 2,
+      "sequence_length": 275,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 0,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 148
+        },
+        {
+          "start_index": 149,
+          "end_index": 274
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 148
+        },
+        {
+          "start_index": 149,
+          "end_index": 274
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_24",
+      "num_workflows": 3,
+      "sequence_length": 887,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 662
+        },
+        {
+          "start_index": 663,
+          "end_index": 682
+        },
+        {
+          "start_index": 683,
+          "end_index": 886
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 378
+        },
+        {
+          "start_index": 438,
+          "end_index": 662
+        },
+        {
+          "start_index": 663,
+          "end_index": 682
+        },
+        {
+          "start_index": 684,
+          "end_index": 753
+        },
+        {
+          "start_index": 754,
+          "end_index": 886
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_25",
+      "num_workflows": 4,
+      "sequence_length": 673,
+      "boundary_precision": 0.75,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8571428571428571,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 307
+        },
+        {
+          "start_index": 308,
+          "end_index": 419
+        },
+        {
+          "start_index": 420,
+          "end_index": 601
+        },
+        {
+          "start_index": 602,
+          "end_index": 672
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 306
+        },
+        {
+          "start_index": 307,
+          "end_index": 417
+        },
+        {
+          "start_index": 418,
+          "end_index": 507
+        },
+        {
+          "start_index": 508,
+          "end_index": 600
+        },
+        {
+          "start_index": 601,
+          "end_index": 672
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_26",
+      "num_workflows": 4,
+      "sequence_length": 538,
+      "boundary_precision": 0.75,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8571428571428571,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 70
+        },
+        {
+          "start_index": 71,
+          "end_index": 202
+        },
+        {
+          "start_index": 203,
+          "end_index": 411
+        },
+        {
+          "start_index": 412,
+          "end_index": 537
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 70
+        },
+        {
+          "start_index": 71,
+          "end_index": 205
+        },
+        {
+          "start_index": 206,
+          "end_index": 288
+        },
+        {
+          "start_index": 289,
+          "end_index": 411
+        },
+        {
+          "start_index": 412,
+          "end_index": 537
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_27",
+      "num_workflows": 5,
+      "sequence_length": 1101,
+      "boundary_precision": 0,
+      "boundary_recall": 0.0,
+      "boundary_f1": 0,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 117
+        },
+        {
+          "start_index": 118,
+          "end_index": 471
+        },
+        {
+          "start_index": 472,
+          "end_index": 680
+        },
+        {
+          "start_index": 681,
+          "end_index": 988
+        },
+        {
+          "start_index": 989,
+          "end_index": 1100
+        }
+      ],
+      "pred_segments": []
+    },
+    {
+      "sequence_id": "sequence_28",
+      "num_workflows": 3,
+      "sequence_length": 870,
+      "boundary_precision": 0.0,
+      "boundary_recall": 0.0,
+      "boundary_f1": 0,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 100
+        },
+        {
+          "start_index": 101,
+          "end_index": 232
+        },
+        {
+          "start_index": 233,
+          "end_index": 869
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 53
+        },
+        {
+          "start_index": 54,
+          "end_index": 236
+        },
+        {
+          "start_index": 237,
+          "end_index": 869
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_29",
+      "num_workflows": 4,
+      "sequence_length": 976,
+      "boundary_precision": 0.5,
+      "boundary_recall": 0.6666666666666666,
+      "boundary_f1": 0.5714285714285715,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 307
+        },
+        {
+          "start_index": 308,
+          "end_index": 622
+        },
+        {
+          "start_index": 623,
+          "end_index": 804
+        },
+        {
+          "start_index": 805,
+          "end_index": 975
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 306
+        },
+        {
+          "start_index": 308,
+          "end_index": 622
+        },
+        {
+          "start_index": 626,
+          "end_index": 896
+        },
+        {
+          "start_index": 717,
+          "end_index": 762
+        },
+        {
+          "start_index": 763,
+          "end_index": 975
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_30",
+      "num_workflows": 2,
+      "sequence_length": 338,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 0,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 125
+        },
+        {
+          "start_index": 126,
+          "end_index": 337
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 125
+        },
+        {
+          "start_index": 126,
+          "end_index": 337
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_31",
+      "num_workflows": 3,
+      "sequence_length": 549,
+      "boundary_precision": 0.125,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.2,
+      "edit_distance": 7,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 218
+        },
+        {
+          "start_index": 219,
+          "end_index": 341
+        },
+        {
+          "start_index": 342,
+          "end_index": 548
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 8
+        },
+        {
+          "start_index": 9,
+          "end_index": 93
+        },
+        {
+          "start_index": 94,
+          "end_index": 111
+        },
+        {
+          "start_index": 112,
+          "end_index": 148
+        },
+        {
+          "start_index": 149,
+          "end_index": 157
+        },
+        {
+          "start_index": 158,
+          "end_index": 173
+        },
+        {
+          "start_index": 174,
+          "end_index": 218
+        },
+        {
+          "start_index": 219,
+          "end_index": 325
+        },
+        {
+          "start_index": 326,
+          "end_index": 548
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_32",
+      "num_workflows": 3,
+      "sequence_length": 1057,
+      "boundary_precision": 1.0,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 780
+        },
+        {
+          "start_index": 781,
+          "end_index": 893
+        },
+        {
+          "start_index": 894,
+          "end_index": 1056
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 780
+        },
+        {
+          "start_index": 781,
+          "end_index": 1056
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_33",
+      "num_workflows": 4,
+      "sequence_length": 767,
+      "boundary_precision": 0.4,
+      "boundary_recall": 0.6666666666666666,
+      "boundary_f1": 0.5,
+      "edit_distance": 5,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 73
+        },
+        {
+          "start_index": 74,
+          "end_index": 362
+        },
+        {
+          "start_index": 363,
+          "end_index": 566
+        },
+        {
+          "start_index": 567,
+          "end_index": 766
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 67
+        },
+        {
+          "start_index": 75,
+          "end_index": 361
+        },
+        {
+          "start_index": 364,
+          "end_index": 433
+        },
+        {
+          "start_index": 444,
+          "end_index": 570
+        },
+        {
+          "start_index": 575,
+          "end_index": 650
+        },
+        {
+          "start_index": 665,
+          "end_index": 760
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_34",
+      "num_workflows": 2,
+      "sequence_length": 329,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 0,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 116
+        },
+        {
+          "start_index": 117,
+          "end_index": 328
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 116
+        },
+        {
+          "start_index": 117,
+          "end_index": 328
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_35",
+      "num_workflows": 3,
+      "sequence_length": 361,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 100
+        },
+        {
+          "start_index": 101,
+          "end_index": 172
+        },
+        {
+          "start_index": 173,
+          "end_index": 360
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 99
+        },
+        {
+          "start_index": 100,
+          "end_index": 172
+        },
+        {
+          "start_index": 173,
+          "end_index": 278
+        },
+        {
+          "start_index": 279,
+          "end_index": 360
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_36",
+      "num_workflows": 2,
+      "sequence_length": 960,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 174
+        },
+        {
+          "start_index": 175,
+          "end_index": 959
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 86
+        },
+        {
+          "start_index": 87,
+          "end_index": 174
+        },
+        {
+          "start_index": 175,
+          "end_index": 959
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_37",
+      "num_workflows": 2,
+      "sequence_length": 902,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 296
+        },
+        {
+          "start_index": 297,
+          "end_index": 901
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 295
+        },
+        {
+          "start_index": 296,
+          "end_index": 799
+        },
+        {
+          "start_index": 800,
+          "end_index": 901
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_38",
+      "num_workflows": 4,
+      "sequence_length": 1265,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 0.6666666666666666,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 209
+        },
+        {
+          "start_index": 210,
+          "end_index": 872
+        },
+        {
+          "start_index": 873,
+          "end_index": 975
+        },
+        {
+          "start_index": 976,
+          "end_index": 1264
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 209
+        },
+        {
+          "start_index": 210,
+          "end_index": 757
+        },
+        {
+          "start_index": 758,
+          "end_index": 972
+        },
+        {
+          "start_index": 973,
+          "end_index": 1264
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_39",
+      "num_workflows": 3,
+      "sequence_length": 977,
+      "boundary_precision": 0.5,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.5,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 203
+        },
+        {
+          "start_index": 204,
+          "end_index": 313
+        },
+        {
+          "start_index": 314,
+          "end_index": 976
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 200
+        },
+        {
+          "start_index": 204,
+          "end_index": 326
+        },
+        {
+          "start_index": 327,
+          "end_index": 976
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_40",
+      "num_workflows": 2,
+      "sequence_length": 311,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 192
+        },
+        {
+          "start_index": 193,
+          "end_index": 310
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 191
+        },
+        {
+          "start_index": 192,
+          "end_index": 301
+        },
+        {
+          "start_index": 302,
+          "end_index": 310
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_41",
+      "num_workflows": 2,
+      "sequence_length": 464,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 350
+        },
+        {
+          "start_index": 351,
+          "end_index": 463
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 349
+        },
+        {
+          "start_index": 350,
+          "end_index": 463
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_42",
+      "num_workflows": 3,
+      "sequence_length": 469,
+      "boundary_precision": 0.125,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.2,
+      "edit_distance": 8,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 141
+        },
+        {
+          "start_index": 142,
+          "end_index": 258
+        },
+        {
+          "start_index": 259,
+          "end_index": 468
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 27
+        },
+        {
+          "start_index": 28,
+          "end_index": 37
+        },
+        {
+          "start_index": 38,
+          "end_index": 93
+        },
+        {
+          "start_index": 94,
+          "end_index": 140
+        },
+        {
+          "start_index": 141,
+          "end_index": 167
+        },
+        {
+          "start_index": 168,
+          "end_index": 174
+        },
+        {
+          "start_index": 175,
+          "end_index": 248
+        },
+        {
+          "start_index": 249,
+          "end_index": 344
+        },
+        {
+          "start_index": 345,
+          "end_index": 468
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_43",
+      "num_workflows": 2,
+      "sequence_length": 685,
+      "boundary_precision": 0.0,
+      "boundary_recall": 0.0,
+      "boundary_f1": 0,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 21
+        },
+        {
+          "start_index": 22,
+          "end_index": 684
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 20
+        },
+        {
+          "start_index": 26,
+          "end_index": 49
+        },
+        {
+          "start_index": 53,
+          "end_index": 684
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_44",
+      "num_workflows": 2,
+      "sequence_length": 1073,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 866
+        },
+        {
+          "start_index": 867,
+          "end_index": 1072
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 619
+        },
+        {
+          "start_index": 620,
+          "end_index": 868
+        },
+        {
+          "start_index": 869,
+          "end_index": 1072
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_45",
+      "num_workflows": 4,
+      "sequence_length": 1448,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 409
+        },
+        {
+          "start_index": 410,
+          "end_index": 693
+        },
+        {
+          "start_index": 694,
+          "end_index": 1330
+        },
+        {
+          "start_index": 1331,
+          "end_index": 1447
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 409
+        },
+        {
+          "start_index": 410,
+          "end_index": 692
+        },
+        {
+          "start_index": 693,
+          "end_index": 1330
+        },
+        {
+          "start_index": 1331,
+          "end_index": 1447
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_46",
+      "num_workflows": 5,
+      "sequence_length": 1592,
+      "boundary_precision": 0.5,
+      "boundary_recall": 0.25,
+      "boundary_f1": 0.3333333333333333,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 353
+        },
+        {
+          "start_index": 354,
+          "end_index": 592
+        },
+        {
+          "start_index": 593,
+          "end_index": 724
+        },
+        {
+          "start_index": 725,
+          "end_index": 928
+        },
+        {
+          "start_index": 929,
+          "end_index": 1591
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 591
+        },
+        {
+          "start_index": 592,
+          "end_index": 945
+        },
+        {
+          "start_index": 946,
+          "end_index": 1591
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_47",
+      "num_workflows": 2,
+      "sequence_length": 853,
+      "boundary_precision": 0.2,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.33333333333333337,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 662
+        },
+        {
+          "start_index": 663,
+          "end_index": 852
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 27
+        },
+        {
+          "start_index": 28,
+          "end_index": 379
+        },
+        {
+          "start_index": 380,
+          "end_index": 437
+        },
+        {
+          "start_index": 438,
+          "end_index": 450
+        },
+        {
+          "start_index": 451,
+          "end_index": 662
+        },
+        {
+          "start_index": 663,
+          "end_index": 852
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_48",
+      "num_workflows": 2,
+      "sequence_length": 565,
+      "boundary_precision": 0.25,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.4,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 335
+        },
+        {
+          "start_index": 336,
+          "end_index": 564
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 186
+        },
+        {
+          "start_index": 201,
+          "end_index": 335
+        },
+        {
+          "start_index": 336,
+          "end_index": 422
+        },
+        {
+          "start_index": 436,
+          "end_index": 487
+        },
+        {
+          "start_index": 488,
+          "end_index": 564
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_49",
+      "num_workflows": 5,
+      "sequence_length": 1775,
+      "boundary_precision": 0.4,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.4444444444444445,
+      "edit_distance": 5,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 632
+        },
+        {
+          "start_index": 633,
+          "end_index": 774
+        },
+        {
+          "start_index": 775,
+          "end_index": 887
+        },
+        {
+          "start_index": 888,
+          "end_index": 907
+        },
+        {
+          "start_index": 908,
+          "end_index": 1774
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 13
+        },
+        {
+          "start_index": 14,
+          "end_index": 70
+        },
+        {
+          "start_index": 71,
+          "end_index": 465
+        },
+        {
+          "start_index": 633,
+          "end_index": 726
+        },
+        {
+          "start_index": 890,
+          "end_index": 900
+        },
+        {
+          "start_index": 1588,
+          "end_index": 1659
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_50",
+      "num_workflows": 3,
+      "sequence_length": 347,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 122
+        },
+        {
+          "start_index": 123,
+          "end_index": 139
+        },
+        {
+          "start_index": 140,
+          "end_index": 346
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 122
+        },
+        {
+          "start_index": 123,
+          "end_index": 138
+        },
+        {
+          "start_index": 139,
+          "end_index": 240
+        },
+        {
+          "start_index": 241,
+          "end_index": 346
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_51",
+      "num_workflows": 4,
+      "sequence_length": 531,
+      "boundary_precision": 0.75,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8571428571428571,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 192
+        },
+        {
+          "start_index": 193,
+          "end_index": 214
+        },
+        {
+          "start_index": 215,
+          "end_index": 418
+        },
+        {
+          "start_index": 419,
+          "end_index": 530
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 191
+        },
+        {
+          "start_index": 192,
+          "end_index": 213
+        },
+        {
+          "start_index": 214,
+          "end_index": 284
+        },
+        {
+          "start_index": 285,
+          "end_index": 418
+        },
+        {
+          "start_index": 419,
+          "end_index": 530
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_52",
+      "num_workflows": 4,
+      "sequence_length": 730,
+      "boundary_precision": 0.5,
+      "boundary_recall": 0.6666666666666666,
+      "boundary_f1": 0.5714285714285715,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 218
+        },
+        {
+          "start_index": 219,
+          "end_index": 348
+        },
+        {
+          "start_index": 349,
+          "end_index": 536
+        },
+        {
+          "start_index": 537,
+          "end_index": 729
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 111
+        },
+        {
+          "start_index": 112,
+          "end_index": 351
+        },
+        {
+          "start_index": 352,
+          "end_index": 454
+        },
+        {
+          "start_index": 455,
+          "end_index": 536
+        },
+        {
+          "start_index": 537,
+          "end_index": 729
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_53",
+      "num_workflows": 3,
+      "sequence_length": 671,
+      "boundary_precision": 0.3333333333333333,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.4,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 141
+        },
+        {
+          "start_index": 142,
+          "end_index": 316
+        },
+        {
+          "start_index": 317,
+          "end_index": 670
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 94
+        },
+        {
+          "start_index": 95,
+          "end_index": 228
+        },
+        {
+          "start_index": 229,
+          "end_index": 316
+        },
+        {
+          "start_index": 317,
+          "end_index": 670
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_54",
+      "num_workflows": 2,
+      "sequence_length": 416,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 314
+        },
+        {
+          "start_index": 315,
+          "end_index": 415
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 313
+        },
+        {
+          "start_index": 314,
+          "end_index": 415
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_55",
+      "num_workflows": 2,
+      "sequence_length": 417,
+      "boundary_precision": 0.3333333333333333,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.5,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 228
+        },
+        {
+          "start_index": 229,
+          "end_index": 416
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 86
+        },
+        {
+          "start_index": 87,
+          "end_index": 228
+        },
+        {
+          "start_index": 229,
+          "end_index": 338
+        },
+        {
+          "start_index": 339,
+          "end_index": 416
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_56",
+      "num_workflows": 4,
+      "sequence_length": 870,
+      "boundary_precision": 0.5,
+      "boundary_recall": 0.6666666666666666,
+      "boundary_f1": 0.5714285714285715,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 162
+        },
+        {
+          "start_index": 163,
+          "end_index": 366
+        },
+        {
+          "start_index": 367,
+          "end_index": 759
+        },
+        {
+          "start_index": 760,
+          "end_index": 869
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 113
+        },
+        {
+          "start_index": 114,
+          "end_index": 233
+        },
+        {
+          "start_index": 234,
+          "end_index": 366
+        },
+        {
+          "start_index": 367,
+          "end_index": 759
+        },
+        {
+          "start_index": 760,
+          "end_index": 869
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_57",
+      "num_workflows": 4,
+      "sequence_length": 767,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 307
+        },
+        {
+          "start_index": 308,
+          "end_index": 379
+        },
+        {
+          "start_index": 380,
+          "end_index": 482
+        },
+        {
+          "start_index": 483,
+          "end_index": 766
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 306
+        },
+        {
+          "start_index": 307,
+          "end_index": 379
+        },
+        {
+          "start_index": 380,
+          "end_index": 480
+        },
+        {
+          "start_index": 481,
+          "end_index": 766
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_58",
+      "num_workflows": 5,
+      "sequence_length": 1213,
+      "boundary_precision": 0.75,
+      "boundary_recall": 0.75,
+      "boundary_f1": 0.75,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 238
+        },
+        {
+          "start_index": 239,
+          "end_index": 350
+        },
+        {
+          "start_index": 351,
+          "end_index": 686
+        },
+        {
+          "start_index": 687,
+          "end_index": 1037
+        },
+        {
+          "start_index": 1038,
+          "end_index": 1212
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 238
+        },
+        {
+          "start_index": 239,
+          "end_index": 350
+        },
+        {
+          "start_index": 351,
+          "end_index": 1036
+        },
+        {
+          "start_index": 1037,
+          "end_index": 1129
+        },
+        {
+          "start_index": 1130,
+          "end_index": 1212
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_59",
+      "num_workflows": 5,
+      "sequence_length": 848,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 128
+        },
+        {
+          "start_index": 129,
+          "end_index": 148
+        },
+        {
+          "start_index": 149,
+          "end_index": 290
+        },
+        {
+          "start_index": 291,
+          "end_index": 493
+        },
+        {
+          "start_index": 494,
+          "end_index": 847
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 128
+        },
+        {
+          "start_index": 129,
+          "end_index": 148
+        },
+        {
+          "start_index": 149,
+          "end_index": 291
+        },
+        {
+          "start_index": 292,
+          "end_index": 351
+        },
+        {
+          "start_index": 352,
+          "end_index": 448
+        },
+        {
+          "start_index": 449,
+          "end_index": 493
+        },
+        {
+          "start_index": 494,
+          "end_index": 847
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_60",
+      "num_workflows": 2,
+      "sequence_length": 397,
+      "boundary_precision": 0.3333333333333333,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.5,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 203
+        },
+        {
+          "start_index": 204,
+          "end_index": 396
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 71
+        },
+        {
+          "start_index": 72,
+          "end_index": 153
+        },
+        {
+          "start_index": 154,
+          "end_index": 203
+        },
+        {
+          "start_index": 204,
+          "end_index": 396
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_61",
+      "num_workflows": 5,
+      "sequence_length": 1893,
+      "boundary_precision": 0.25,
+      "boundary_recall": 0.25,
+      "boundary_f1": 0.25,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 109
+        },
+        {
+          "start_index": 110,
+          "end_index": 894
+        },
+        {
+          "start_index": 895,
+          "end_index": 1026
+        },
+        {
+          "start_index": 1027,
+          "end_index": 1255
+        },
+        {
+          "start_index": 1256,
+          "end_index": 1892
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 110
+        },
+        {
+          "start_index": 111,
+          "end_index": 394
+        },
+        {
+          "start_index": 395,
+          "end_index": 503
+        },
+        {
+          "start_index": 504,
+          "end_index": 1264
+        },
+        {
+          "start_index": 1265,
+          "end_index": 1892
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_62",
+      "num_workflows": 3,
+      "sequence_length": 541,
+      "boundary_precision": 0.3333333333333333,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.4,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 288
+        },
+        {
+          "start_index": 289,
+          "end_index": 417
+        },
+        {
+          "start_index": 418,
+          "end_index": 540
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 287
+        },
+        {
+          "start_index": 288,
+          "end_index": 444
+        },
+        {
+          "start_index": 445,
+          "end_index": 525
+        },
+        {
+          "start_index": 526,
+          "end_index": 540
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_63",
+      "num_workflows": 4,
+      "sequence_length": 1951,
+      "boundary_precision": 1.0,
+      "boundary_recall": 0.6666666666666666,
+      "boundary_f1": 0.8,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 782
+        },
+        {
+          "start_index": 783,
+          "end_index": 1415
+        },
+        {
+          "start_index": 1416,
+          "end_index": 1614
+        },
+        {
+          "start_index": 1615,
+          "end_index": 1950
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 1415
+        },
+        {
+          "start_index": 1416,
+          "end_index": 1615
+        },
+        {
+          "start_index": 1616,
+          "end_index": 1950
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_64",
+      "num_workflows": 3,
+      "sequence_length": 764,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 335
+        },
+        {
+          "start_index": 336,
+          "end_index": 650
+        },
+        {
+          "start_index": 651,
+          "end_index": 763
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 335
+        },
+        {
+          "start_index": 336,
+          "end_index": 649
+        },
+        {
+          "start_index": 650,
+          "end_index": 763
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_65",
+      "num_workflows": 5,
+      "sequence_length": 763,
+      "boundary_precision": 0.14285714285714285,
+      "boundary_recall": 0.25,
+      "boundary_f1": 0.18181818181818182,
+      "edit_distance": 7,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 122
+        },
+        {
+          "start_index": 123,
+          "end_index": 321
+        },
+        {
+          "start_index": 322,
+          "end_index": 531
+        },
+        {
+          "start_index": 532,
+          "end_index": 644
+        },
+        {
+          "start_index": 645,
+          "end_index": 762
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 26
+        },
+        {
+          "start_index": 27,
+          "end_index": 106
+        },
+        {
+          "start_index": 107,
+          "end_index": 211
+        },
+        {
+          "start_index": 212,
+          "end_index": 300
+        },
+        {
+          "start_index": 301,
+          "end_index": 408
+        },
+        {
+          "start_index": 409,
+          "end_index": 449
+        },
+        {
+          "start_index": 450,
+          "end_index": 532
+        },
+        {
+          "start_index": 533,
+          "end_index": 748
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_66",
+      "num_workflows": 4,
+      "sequence_length": 738,
+      "boundary_precision": 0.5,
+      "boundary_recall": 0.6666666666666666,
+      "boundary_f1": 0.5714285714285715,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 187
+        },
+        {
+          "start_index": 188,
+          "end_index": 400
+        },
+        {
+          "start_index": 401,
+          "end_index": 518
+        },
+        {
+          "start_index": 519,
+          "end_index": 737
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 96
+        },
+        {
+          "start_index": 97,
+          "end_index": 187
+        },
+        {
+          "start_index": 188,
+          "end_index": 399
+        },
+        {
+          "start_index": 400,
+          "end_index": 428
+        },
+        {
+          "start_index": 429,
+          "end_index": 737
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_67",
+      "num_workflows": 5,
+      "sequence_length": 991,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 129
+        },
+        {
+          "start_index": 130,
+          "end_index": 437
+        },
+        {
+          "start_index": 438,
+          "end_index": 563
+        },
+        {
+          "start_index": 564,
+          "end_index": 802
+        },
+        {
+          "start_index": 803,
+          "end_index": 990
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 91
+        },
+        {
+          "start_index": 92,
+          "end_index": 129
+        },
+        {
+          "start_index": 130,
+          "end_index": 436
+        },
+        {
+          "start_index": 437,
+          "end_index": 563
+        },
+        {
+          "start_index": 564,
+          "end_index": 801
+        },
+        {
+          "start_index": 802,
+          "end_index": 900
+        },
+        {
+          "start_index": 901,
+          "end_index": 990
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_68",
+      "num_workflows": 2,
+      "sequence_length": 406,
+      "boundary_precision": 0.3333333333333333,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.5,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 202
+        },
+        {
+          "start_index": 203,
+          "end_index": 405
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 75
+        },
+        {
+          "start_index": 76,
+          "end_index": 205
+        },
+        {
+          "start_index": 206,
+          "end_index": 286
+        },
+        {
+          "start_index": 287,
+          "end_index": 405
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_69",
+      "num_workflows": 4,
+      "sequence_length": 628,
+      "boundary_precision": 0.2,
+      "boundary_recall": 0.3333333333333333,
+      "boundary_f1": 0.25,
+      "edit_distance": 5,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 116
+        },
+        {
+          "start_index": 117,
+          "end_index": 229
+        },
+        {
+          "start_index": 230,
+          "end_index": 417
+        },
+        {
+          "start_index": 418,
+          "end_index": 627
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 137
+        },
+        {
+          "start_index": 138,
+          "end_index": 236
+        },
+        {
+          "start_index": 237,
+          "end_index": 326
+        },
+        {
+          "start_index": 334,
+          "end_index": 414
+        },
+        {
+          "start_index": 421,
+          "end_index": 504
+        },
+        {
+          "start_index": 509,
+          "end_index": 627
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_70",
+      "num_workflows": 3,
+      "sequence_length": 469,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 254
+        },
+        {
+          "start_index": 255,
+          "end_index": 365
+        },
+        {
+          "start_index": 366,
+          "end_index": 468
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 253
+        },
+        {
+          "start_index": 254,
+          "end_index": 365
+        },
+        {
+          "start_index": 366,
+          "end_index": 468
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_71",
+      "num_workflows": 4,
+      "sequence_length": 1184,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 0.6666666666666666,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 238
+        },
+        {
+          "start_index": 239,
+          "end_index": 310
+        },
+        {
+          "start_index": 311,
+          "end_index": 973
+        },
+        {
+          "start_index": 974,
+          "end_index": 1183
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 237
+        },
+        {
+          "start_index": 238,
+          "end_index": 310
+        },
+        {
+          "start_index": 311,
+          "end_index": 944
+        },
+        {
+          "start_index": 945,
+          "end_index": 1183
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_72",
+      "num_workflows": 3,
+      "sequence_length": 605,
+      "boundary_precision": 0.0,
+      "boundary_recall": 0.0,
+      "boundary_f1": 0,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 206
+        },
+        {
+          "start_index": 207,
+          "end_index": 394
+        },
+        {
+          "start_index": 395,
+          "end_index": 604
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 101
+        },
+        {
+          "start_index": 102,
+          "end_index": 361
+        },
+        {
+          "start_index": 362,
+          "end_index": 604
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_73",
+      "num_workflows": 2,
+      "sequence_length": 250,
+      "boundary_precision": 0.0,
+      "boundary_recall": 0.0,
+      "boundary_f1": 0,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 119
+        },
+        {
+          "start_index": 120,
+          "end_index": 249
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 23
+        },
+        {
+          "start_index": 24,
+          "end_index": 88
+        },
+        {
+          "start_index": 89,
+          "end_index": 143
+        },
+        {
+          "start_index": 144,
+          "end_index": 211
+        },
+        {
+          "start_index": 212,
+          "end_index": 249
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_74",
+      "num_workflows": 4,
+      "sequence_length": 1108,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 174
+        },
+        {
+          "start_index": 175,
+          "end_index": 779
+        },
+        {
+          "start_index": 780,
+          "end_index": 978
+        },
+        {
+          "start_index": 979,
+          "end_index": 1107
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 174
+        },
+        {
+          "start_index": 175,
+          "end_index": 779
+        },
+        {
+          "start_index": 780,
+          "end_index": 977
+        },
+        {
+          "start_index": 978,
+          "end_index": 1107
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_75",
+      "num_workflows": 3,
+      "sequence_length": 529,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 254
+        },
+        {
+          "start_index": 255,
+          "end_index": 396
+        },
+        {
+          "start_index": 397,
+          "end_index": 528
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 253
+        },
+        {
+          "start_index": 254,
+          "end_index": 396
+        },
+        {
+          "start_index": 397,
+          "end_index": 525
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_76",
+      "num_workflows": 4,
+      "sequence_length": 1519,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 0.6666666666666666,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 174
+        },
+        {
+          "start_index": 175,
+          "end_index": 429
+        },
+        {
+          "start_index": 430,
+          "end_index": 737
+        },
+        {
+          "start_index": 738,
+          "end_index": 1518
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 86
+        },
+        {
+          "start_index": 87,
+          "end_index": 174
+        },
+        {
+          "start_index": 175,
+          "end_index": 737
+        },
+        {
+          "start_index": 738,
+          "end_index": 1518
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_77",
+      "num_workflows": 2,
+      "sequence_length": 412,
+      "boundary_precision": 0.0,
+      "boundary_recall": 0.0,
+      "boundary_f1": 0,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 208
+        },
+        {
+          "start_index": 209,
+          "end_index": 411
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 84
+        },
+        {
+          "start_index": 85,
+          "end_index": 196
+        },
+        {
+          "start_index": 197,
+          "end_index": 214
+        },
+        {
+          "start_index": 215,
+          "end_index": 292
+        },
+        {
+          "start_index": 293,
+          "end_index": 411
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_78",
+      "num_workflows": 3,
+      "sequence_length": 1005,
+      "boundary_precision": 0.4,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.5714285714285715,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 37
+        },
+        {
+          "start_index": 38,
+          "end_index": 822
+        },
+        {
+          "start_index": 823,
+          "end_index": 1004
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 19
+        },
+        {
+          "start_index": 20,
+          "end_index": 37
+        },
+        {
+          "start_index": 38,
+          "end_index": 435
+        },
+        {
+          "start_index": 436,
+          "end_index": 823
+        },
+        {
+          "start_index": 824,
+          "end_index": 935
+        },
+        {
+          "start_index": 936,
+          "end_index": 1004
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_79",
+      "num_workflows": 4,
+      "sequence_length": 1276,
+      "boundary_precision": 0.75,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8571428571428571,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 189
+        },
+        {
+          "start_index": 190,
+          "end_index": 319
+        },
+        {
+          "start_index": 320,
+          "end_index": 490
+        },
+        {
+          "start_index": 491,
+          "end_index": 1275
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 188
+        },
+        {
+          "start_index": 189,
+          "end_index": 319
+        },
+        {
+          "start_index": 320,
+          "end_index": 415
+        },
+        {
+          "start_index": 416,
+          "end_index": 490
+        },
+        {
+          "start_index": 491,
+          "end_index": 1275
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_80",
+      "num_workflows": 3,
+      "sequence_length": 507,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 174
+        },
+        {
+          "start_index": 175,
+          "end_index": 374
+        },
+        {
+          "start_index": 375,
+          "end_index": 506
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 86
+        },
+        {
+          "start_index": 87,
+          "end_index": 177
+        },
+        {
+          "start_index": 178,
+          "end_index": 266
+        },
+        {
+          "start_index": 267,
+          "end_index": 374
+        },
+        {
+          "start_index": 375,
+          "end_index": 506
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_81",
+      "num_workflows": 3,
+      "sequence_length": 732,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 189
+        },
+        {
+          "start_index": 190,
+          "end_index": 395
+        },
+        {
+          "start_index": 396,
+          "end_index": 731
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 189
+        },
+        {
+          "start_index": 190,
+          "end_index": 295
+        },
+        {
+          "start_index": 296,
+          "end_index": 353
+        },
+        {
+          "start_index": 354,
+          "end_index": 394
+        },
+        {
+          "start_index": 395,
+          "end_index": 731
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_82",
+      "num_workflows": 2,
+      "sequence_length": 348,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 198
+        },
+        {
+          "start_index": 199,
+          "end_index": 347
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 197
+        },
+        {
+          "start_index": 198,
+          "end_index": 347
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_83",
+      "num_workflows": 5,
+      "sequence_length": 955,
+      "boundary_precision": 0.25,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.3333333333333333,
+      "edit_distance": 6,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 21
+        },
+        {
+          "start_index": 22,
+          "end_index": 240
+        },
+        {
+          "start_index": 241,
+          "end_index": 650
+        },
+        {
+          "start_index": 651,
+          "end_index": 853
+        },
+        {
+          "start_index": 854,
+          "end_index": 954
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 20
+        },
+        {
+          "start_index": 31,
+          "end_index": 115
+        },
+        {
+          "start_index": 133,
+          "end_index": 170
+        },
+        {
+          "start_index": 196,
+          "end_index": 225
+        },
+        {
+          "start_index": 241,
+          "end_index": 650
+        },
+        {
+          "start_index": 656,
+          "end_index": 723
+        },
+        {
+          "start_index": 728,
+          "end_index": 768
+        },
+        {
+          "start_index": 809,
+          "end_index": 843
+        },
+        {
+          "start_index": 854,
+          "end_index": 917
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_84",
+      "num_workflows": 2,
+      "sequence_length": 461,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 350
+        },
+        {
+          "start_index": 351,
+          "end_index": 460
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 349
+        },
+        {
+          "start_index": 350,
+          "end_index": 460
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_85",
+      "num_workflows": 3,
+      "sequence_length": 628,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 238
+        },
+        {
+          "start_index": 239,
+          "end_index": 553
+        },
+        {
+          "start_index": 554,
+          "end_index": 627
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 238
+        },
+        {
+          "start_index": 239,
+          "end_index": 552
+        },
+        {
+          "start_index": 553,
+          "end_index": 627
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_86",
+      "num_workflows": 5,
+      "sequence_length": 739,
+      "boundary_precision": 0.8,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.888888888888889,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 109
+        },
+        {
+          "start_index": 110,
+          "end_index": 220
+        },
+        {
+          "start_index": 221,
+          "end_index": 338
+        },
+        {
+          "start_index": 339,
+          "end_index": 635
+        },
+        {
+          "start_index": 636,
+          "end_index": 738
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 109
+        },
+        {
+          "start_index": 110,
+          "end_index": 218
+        },
+        {
+          "start_index": 221,
+          "end_index": 250
+        },
+        {
+          "start_index": 251,
+          "end_index": 300
+        },
+        {
+          "start_index": 339,
+          "end_index": 448
+        },
+        {
+          "start_index": 636,
+          "end_index": 660
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_87",
+      "num_workflows": 3,
+      "sequence_length": 593,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 350
+        },
+        {
+          "start_index": 351,
+          "end_index": 521
+        },
+        {
+          "start_index": 522,
+          "end_index": 592
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 349
+        },
+        {
+          "start_index": 350,
+          "end_index": 442
+        },
+        {
+          "start_index": 443,
+          "end_index": 486
+        },
+        {
+          "start_index": 487,
+          "end_index": 521
+        },
+        {
+          "start_index": 522,
+          "end_index": 592
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_88",
+      "num_workflows": 5,
+      "sequence_length": 854,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.5714285714285715,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 129
+        },
+        {
+          "start_index": 130,
+          "end_index": 261
+        },
+        {
+          "start_index": 262,
+          "end_index": 333
+        },
+        {
+          "start_index": 334,
+          "end_index": 443
+        },
+        {
+          "start_index": 444,
+          "end_index": 853
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 261
+        },
+        {
+          "start_index": 262,
+          "end_index": 333
+        },
+        {
+          "start_index": 334,
+          "end_index": 356
+        },
+        {
+          "start_index": 357,
+          "end_index": 853
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_89",
+      "num_workflows": 5,
+      "sequence_length": 796,
+      "boundary_precision": 1.0,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 117
+        },
+        {
+          "start_index": 118,
+          "end_index": 247
+        },
+        {
+          "start_index": 248,
+          "end_index": 379
+        },
+        {
+          "start_index": 380,
+          "end_index": 511
+        },
+        {
+          "start_index": 512,
+          "end_index": 795
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 379
+        },
+        {
+          "start_index": 380,
+          "end_index": 511
+        },
+        {
+          "start_index": 512,
+          "end_index": 795
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_90",
+      "num_workflows": 2,
+      "sequence_length": 417,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 226
+        },
+        {
+          "start_index": 227,
+          "end_index": 416
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 225
+        },
+        {
+          "start_index": 229,
+          "end_index": 416
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_91",
+      "num_workflows": 3,
+      "sequence_length": 373,
+      "boundary_precision": 0.125,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.2,
+      "edit_distance": 7,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 37
+        },
+        {
+          "start_index": 38,
+          "end_index": 169
+        },
+        {
+          "start_index": 170,
+          "end_index": 372
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 18
+        },
+        {
+          "start_index": 20,
+          "end_index": 37
+        },
+        {
+          "start_index": 38,
+          "end_index": 94
+        },
+        {
+          "start_index": 108,
+          "end_index": 165
+        },
+        {
+          "start_index": 175,
+          "end_index": 238
+        },
+        {
+          "start_index": 253,
+          "end_index": 288
+        },
+        {
+          "start_index": 313,
+          "end_index": 363
+        },
+        {
+          "start_index": 328,
+          "end_index": 363
+        },
+        {
+          "start_index": 353,
+          "end_index": 372
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_92",
+      "num_workflows": 3,
+      "sequence_length": 712,
+      "boundary_precision": 0.5,
+      "boundary_recall": 0.5,
+      "boundary_f1": 0.5,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 335
+        },
+        {
+          "start_index": 336,
+          "end_index": 523
+        },
+        {
+          "start_index": 524,
+          "end_index": 711
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 335
+        },
+        {
+          "start_index": 336,
+          "end_index": 438
+        },
+        {
+          "start_index": 439,
+          "end_index": 711
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_93",
+      "num_workflows": 3,
+      "sequence_length": 1211,
+      "boundary_precision": 0.6666666666666666,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.8,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 780
+        },
+        {
+          "start_index": 781,
+          "end_index": 983
+        },
+        {
+          "start_index": 984,
+          "end_index": 1210
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 781
+        },
+        {
+          "start_index": 782,
+          "end_index": 853
+        },
+        {
+          "start_index": 854,
+          "end_index": 983
+        },
+        {
+          "start_index": 984,
+          "end_index": 1210
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_94",
+      "num_workflows": 5,
+      "sequence_length": 1441,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 3,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 392
+        },
+        {
+          "start_index": 393,
+          "end_index": 442
+        },
+        {
+          "start_index": 443,
+          "end_index": 632
+        },
+        {
+          "start_index": 633,
+          "end_index": 1237
+        },
+        {
+          "start_index": 1238,
+          "end_index": 1440
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 391
+        },
+        {
+          "start_index": 393,
+          "end_index": 441
+        },
+        {
+          "start_index": 442,
+          "end_index": 634
+        },
+        {
+          "start_index": 635,
+          "end_index": 1238
+        },
+        {
+          "start_index": 1240,
+          "end_index": 1440
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_95",
+      "num_workflows": 3,
+      "sequence_length": 466,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 49
+        },
+        {
+          "start_index": 50,
+          "end_index": 333
+        },
+        {
+          "start_index": 334,
+          "end_index": 465
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 48
+        },
+        {
+          "start_index": 50,
+          "end_index": 332
+        },
+        {
+          "start_index": 334,
+          "end_index": 390
+        },
+        {
+          "start_index": 404,
+          "end_index": 428
+        },
+        {
+          "start_index": 433,
+          "end_index": 448
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_96",
+      "num_workflows": 3,
+      "sequence_length": 810,
+      "boundary_precision": 1.0,
+      "boundary_recall": 1.0,
+      "boundary_f1": 1.0,
+      "edit_distance": 1,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 288
+        },
+        {
+          "start_index": 289,
+          "end_index": 399
+        },
+        {
+          "start_index": 400,
+          "end_index": 809
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 287
+        },
+        {
+          "start_index": 288,
+          "end_index": 399
+        },
+        {
+          "start_index": 400,
+          "end_index": 809
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_97",
+      "num_workflows": 4,
+      "sequence_length": 506,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 102
+        },
+        {
+          "start_index": 103,
+          "end_index": 321
+        },
+        {
+          "start_index": 322,
+          "end_index": 434
+        },
+        {
+          "start_index": 435,
+          "end_index": 505
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 24
+        },
+        {
+          "start_index": 25,
+          "end_index": 99
+        },
+        {
+          "start_index": 100,
+          "end_index": 252
+        },
+        {
+          "start_index": 253,
+          "end_index": 321
+        },
+        {
+          "start_index": 322,
+          "end_index": 342
+        },
+        {
+          "start_index": 343,
+          "end_index": 422
+        },
+        {
+          "start_index": 435,
+          "end_index": 505
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_98",
+      "num_workflows": 5,
+      "sequence_length": 1740,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 4,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 662
+        },
+        {
+          "start_index": 663,
+          "end_index": 773
+        },
+        {
+          "start_index": 774,
+          "end_index": 936
+        },
+        {
+          "start_index": 937,
+          "end_index": 956
+        },
+        {
+          "start_index": 957,
+          "end_index": 1739
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 27
+        },
+        {
+          "start_index": 28,
+          "end_index": 112
+        },
+        {
+          "start_index": 113,
+          "end_index": 662
+        },
+        {
+          "start_index": 663,
+          "end_index": 727
+        },
+        {
+          "start_index": 728,
+          "end_index": 773
+        },
+        {
+          "start_index": 774,
+          "end_index": 887
+        },
+        {
+          "start_index": 888,
+          "end_index": 936
+        },
+        {
+          "start_index": 937,
+          "end_index": 956
+        },
+        {
+          "start_index": 957,
+          "end_index": 1739
+        }
+      ]
+    },
+    {
+      "sequence_id": "sequence_99",
+      "num_workflows": 2,
+      "sequence_length": 300,
+      "boundary_precision": 0.5,
+      "boundary_recall": 1.0,
+      "boundary_f1": 0.6666666666666666,
+      "edit_distance": 2,
+      "true_segments": [
+        {
+          "start_index": 0,
+          "end_index": 70
+        },
+        {
+          "start_index": 71,
+          "end_index": 299
+        }
+      ],
+      "pred_segments": [
+        {
+          "start_index": 0,
+          "end_index": 69
+        },
+        {
+          "start_index": 70,
+          "end_index": 157
+        },
+        {
+          "start_index": 158,
+          "end_index": 299
+        }
+      ]
+    }
+  ],
+  "aggregate_metrics": {
+    "boundary_precision": 0.5786785714285715,
+    "boundary_recall": 0.76,
+    "boundary_f1": 0.6327430902430902,
+    "edit_distance": 2.59
+  }
+}

@@ -1,0 +1,50 @@
+{
+    "Employee offboarding":{
+        "precision":0.46875,
+        "recall":1.0,
+        "f1-score":0.6382978723,
+        "support":15.0
+    },
+    "Employment letter generation":{
+        "precision":0.0,
+        "recall":0.0,
+        "f1-score":0.0,
+        "support":15.0
+    },
+    "Candidate sourcing and screening":{
+        "precision":1.0,
+        "recall":1.0,
+        "f1-score":1.0,
+        "support":14.0
+    },
+    "Monthly leave report":{
+        "precision":1.0,
+        "recall":1.0,
+        "f1-score":1.0,
+        "support":4.0
+    },
+    "Job creation":{
+        "precision":1.0,
+        "recall":1.0,
+        "f1-score":1.0,
+        "support":21.0
+    },
+    "Employment record reporting":{
+        "precision":1.0,
+        "recall":0.5,
+        "f1-score":0.6666666667,
+        "support":4.0
+    },
+    "accuracy":{
+        "precision":0.7671232877,
+        "recall":0.7671232877,
+        "f1-score":0.7671232877,
+        "support":0.7671232877
+    },
+    "Average":{
+        "precision":0.7447916667,
+        "recall":0.75,
+        "f1-score":0.7174940898,
+        "support":73.0
+    }
+}

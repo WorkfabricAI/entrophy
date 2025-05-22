@@ -1,0 +1,50 @@
+{
+    "Employee offboarding":{
+        "Employee offboarding":15,
+        "Job creation":0,
+        "Candidate sourcing and screening":0,
+        "Employment letter generation":13,
+        "Monthly leave report":0,
+        "Employment record reporting":2
+    },
+    "Job creation":{
+        "Employee offboarding":0,
+        "Job creation":21,
+        "Candidate sourcing and screening":0,
+        "Employment letter generation":0,
+        "Monthly leave report":0,
+        "Employment record reporting":0
+    },
+    "Candidate sourcing and screening":{
+        "Employee offboarding":0,
+        "Job creation":0,
+        "Candidate sourcing and screening":14,
+        "Employment letter generation":0,
+        "Monthly leave report":0,
+        "Employment record reporting":0
+    },
+    "Employment letter generation":{
+        "Employee offboarding":0,
+        "Job creation":0,
+        "Candidate sourcing and screening":0,
+        "Employment letter generation":2,
+        "Monthly leave report":0,
+        "Employment record reporting":0
+    },
+    "Monthly leave report":{
+        "Employee offboarding":0,
+        "Job creation":0,
+        "Candidate sourcing and screening":0,
+        "Employment letter generation":0,
+        "Monthly leave report":4,
+        "Employment record reporting":0
+    },
+    "Employment record reporting":{
+        "Employee offboarding":0,
+        "Job creation":0,
+        "Candidate sourcing and screening":0,
+        "Employment letter generation":0,
+        "Monthly leave report":0,
+        "Employment record reporting":2
+    }
+}

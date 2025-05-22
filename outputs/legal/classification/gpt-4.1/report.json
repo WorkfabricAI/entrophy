@@ -1,0 +1,56 @@
+{
+    "Legal finalization and SOW execution":{
+        "precision":0.7826086957,
+        "recall":0.4864864865,
+        "f1-score":0.6,
+        "support":37.0
+    },
+    "MSA contract iteration":{
+        "precision":0.0,
+        "recall":0.0,
+        "f1-score":0.0,
+        "support":1.0
+    },
+    "First pass contract review":{
+        "precision":0.0,
+        "recall":0.0,
+        "f1-score":0.0,
+        "support":1.0
+    },
+    "SOW iteration":{
+        "precision":0.3103448276,
+        "recall":0.9,
+        "f1-score":0.4615384615,
+        "support":20.0
+    },
+    "SOW kickoff and order form creation":{
+        "precision":0.0,
+        "recall":0.0,
+        "f1-score":0.0,
+        "support":20.0
+    },
+    "Contract kickoff":{
+        "precision":0.0,
+        "recall":0.0,
+        "f1-score":0.0,
+        "support":22.0
+    },
+    "Legal finalization and MSA execution":{
+        "precision":0.5,
+        "recall":1.0,
+        "f1-score":0.6666666667,
+        "support":1.0
+    },
+    "accuracy":{
+        "precision":0.362745098,
+        "recall":0.362745098,
+        "f1-score":0.362745098,
+        "support":0.362745098
+    },
+    "Average":{
+        "precision":0.227564789,
+        "recall":0.3409266409,
+        "f1-score":0.2468864469,
+        "support":102.0
+    }
+}

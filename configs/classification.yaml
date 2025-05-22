@@ -1,0 +1,21 @@
+# Workflow Classification Configuration
+
+# Data settings
+data_path: PATH_TO_DATA_FILE # e.g. data/json/hr.json
+output_dir: PATH_TO_OUTPUT_DIR # e.g. outputs/hr
+
+# Model settings
+model_name: MODEL_NAME # e.g. Qwen/Qwen3-32B
+batch_size: 8 # ONLY USED FOR LOCAL MODELS
+
+# Provider settings
+provider: PROVIDER # e.g. openai, anthropic, google, huggingface
+api_key: API_KEY
+api_base: null  # Set to custom base URL if needed
+max_tokens: 5000
+temperature: 0.6
+wait_time: 1.0 # Wait time between batches to avoid rate limiting
+
+# Hardware settings
+seed: 2404 # Random seed for reproducibility
+gpus: "0"  # Use comma-separated list for multiple GPUs, e.g. "0,1" 
