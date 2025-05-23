@@ -561,7 +561,7 @@ class PlotGenerator:
         f1 = [data[m].get("boundary_f1", 0) for m in models]
 
         # Create figure with constrained layout
-        fig, ax = plt.subplots(figsize=(15, 10), constrained_layout=True)
+        fig, ax = plt.subplots(figsize=(14, 8), constrained_layout=True)
 
         x = np.arange(len(models))
         width = 0.2  # Width of a single bar in a group
@@ -610,7 +610,7 @@ class PlotGenerator:
                     f"{height:.2f}",
                     ha="center",
                     va="bottom",
-                    fontsize=14,
+                    fontsize=16,
                     fontweight="bold",
                     bbox=dict(
                         facecolor="white",
@@ -629,8 +629,6 @@ class PlotGenerator:
 
         display_domain = self._get_display_name(domain)
         display_task_type = self._get_display_name(task_type)
-        title = f"Segmentation Performance Metrics ({display_domain})"
-        ax.set_title(title, fontweight="bold", fontsize=22, pad=20)
 
         ax.set_xticks([])  # Remove x-axis ticks
         ax.set_xticklabels([])  # Remove x-axis labels (model names)
@@ -653,7 +651,11 @@ class PlotGenerator:
                 spine_val.set_visible(False)
 
         # Create figure-level legend for metrics
-        metric_handles = [bars1[0], bars2[0], bars3[0]]
+        metric_handles = [
+            plt.Rectangle((0, 0), 1, 1, color="#666666", alpha=0.85),
+            plt.Rectangle((0, 0), 1, 1, color="#666666", alpha=0.70),
+            plt.Rectangle((0, 0), 1, 1, color="#666666", alpha=0.55),
+        ]  # Gray rectangles with different alpha values for distinction
         metric_labels = ["Precision", "Recall", "F1-Score"]
         fig.legend(
             metric_handles,
@@ -661,7 +663,7 @@ class PlotGenerator:
             loc="lower center",
             ncol=3,
             bbox_to_anchor=(0.5, -0.08),
-            fontsize=18,
+            fontsize=20,
             frameon=True,
             framealpha=0.8,
             edgecolor="lightgray",
@@ -681,7 +683,7 @@ class PlotGenerator:
             loc="lower center",
             ncol=min(len(models), 5),
             bbox_to_anchor=(0.5, -0.16),
-            fontsize=18,
+            fontsize=20,
             frameon=True,
             framealpha=0.8,
             edgecolor="lightgray",
