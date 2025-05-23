@@ -255,7 +255,7 @@ class PlotGenerator:
         accuracy = [data[m]["accuracy"] for m in models]
 
         # Create figure with constrained layout for better automatic spacing
-        fig, ax = plt.subplots(figsize=(15, 10), constrained_layout=True)
+        fig, ax = plt.subplots(figsize=(14, 6), constrained_layout=True)
 
         x = np.arange(len(models))
         width = 0.2  # Width of a single bar in a group
@@ -314,12 +314,12 @@ class PlotGenerator:
                     f"{height:.2f}",
                     ha="center",
                     va="bottom",
-                    fontsize=14,
+                    fontsize=13,
                     fontweight="bold",  # Updated font
                     bbox=dict(
                         facecolor="white",
                         alpha=0.7,
-                        boxstyle="round,pad=0.2",
+                        boxstyle="round,pad=0.15",
                         edgecolor="lightgray",
                     ),
                 )
@@ -331,13 +331,6 @@ class PlotGenerator:
 
         # Add styled labels and title
         ax.set_ylabel("Score", fontweight="bold", fontsize=18)  # Increased font size
-
-        display_domain = self._get_display_name(domain)
-        display_task_type = self._get_display_name(task_type)
-        title = f"Classification Performance Metrics ({display_domain})"
-        ax.set_title(
-            title, fontweight="bold", fontsize=24, pad=20
-        )  # Increased font size
 
         ax.set_xticks([])  # Remove x-axis ticks
         ax.set_xticklabels([])  # Remove x-axis labels (model names)
@@ -363,12 +356,13 @@ class PlotGenerator:
                 spine_val.set_visible(False)  # Ensure others are off
 
         # Create figure-level legend for metrics (P, R, F1, Acc)
+        # Create gray rectangles for metric legend instead of using colored bars
         metric_handles = [
-            bars1[0],
-            bars2[0],
-            bars3[0],
-            bars4[0],
-        ]  # Representative bar for each metric
+            plt.Rectangle((0, 0), 1, 1, color="#666666", alpha=0.85),
+            plt.Rectangle((0, 0), 1, 1, color="#666666", alpha=0.70),
+            plt.Rectangle((0, 0), 1, 1, color="#666666", alpha=0.55),
+            plt.Rectangle((0, 0), 1, 1, color="#666666", alpha=0.40),
+        ]  # Gray rectangles with different alpha values for distinction
         metric_labels = ["Precision", "Recall", "F1-Score", "Accuracy"]
         fig.legend(
             metric_handles,
@@ -402,15 +396,11 @@ class PlotGenerator:
             edgecolor="lightgray",
         )
 
-        # Adjust layout to make space for legends at the bottom
-        fig.subplots_adjust(bottom=0.25)  # Increased bottom margin
-
         # Save figure
-        # plt.tight_layout() # Remove as constrained_layout is used
-        fig_path = self.output_dir / f"{domain}_{task_type}_metrics.png"
+        fig_path = self.output_dir / f"{domain}_{task_type}_metrics.pdf"
         plt.savefig(
             fig_path, dpi=300, bbox_inches="tight"
-        )  # Removed pad_inches, rely on tight_layout and subplots_adjust
+        ) 
         plt.close(fig)
 
         # Create heatmap for top confusion pairs
@@ -447,11 +437,11 @@ class PlotGenerator:
         modern_cmap = LinearSegmentedColormap.from_list("modern_confusion", colors, N=256)
 
         # Enhanced figure sizing based on number of classes
-        base_size = max(10, len(classes) * 1.2)
-        fig_width = min(base_size, 20)  # Cap at 20 inches
-        fig_height = min(base_size * 0.9, 18)  # Cap at 18 inches
+
+        w = max(8, min(10, len(classes) * 1))
+        h = max(8, min(9, len(classes) * 0.9))
         
-        fig, ax = plt.subplots(figsize=(fig_width, fig_height))
+        fig, ax = plt.subplots(figsize=(w, h))
         fig.patch.set_facecolor('white')
 
         # Create custom annotation matrix with both counts and percentages
@@ -515,6 +505,7 @@ class PlotGenerator:
         
         # Get display names for classes
         display_classes = [self._get_display_name(c) for c in classes]
+        display_classes = [c[:20] + "..." if len(c) > 20 else c for c in display_classes]
         
         ax.set_xticklabels(display_classes, rotation=45, ha='right', fontsize=16, 
                           fontweight='medium')
@@ -536,12 +527,6 @@ class PlotGenerator:
         ax.set_ylabel('True Class', fontsize=18, fontweight='bold', 
                      labelpad=20, color='#2c3e50')
 
-        # Multi-line title with better typography
-        title_line2 = f"{display_model_name} • {display_domain}"
-        
-        ax.text(0.5, 1.08, title_line2, transform=ax.transAxes, 
-               fontsize=20, fontweight='medium', ha='center', 
-               color='#7f8c8d', style='italic')
 
         # Enhanced border around the entire heatmap
         border_rect = plt.Rectangle((-0.5, -0.5), len(classes), len(classes), 
@@ -556,8 +541,8 @@ class PlotGenerator:
 
         # Enhanced layout and save
         plt.tight_layout()
-        fig_path = self.output_dir / f"{domain}_{task_type}_{model_name}_confusion.png"
-        plt.savefig(fig_path, dpi=300, bbox_inches='tight', pad_inches=0.5, 
+        fig_path = self.output_dir / f"{domain}_{task_type}_{model_name}_confusion.pdf"
+        plt.savefig(fig_path, dpi=300, bbox_inches='tight', pad_inches=0, 
                    facecolor='white', edgecolor='none')
         plt.close(fig)
 
@@ -702,11 +687,9 @@ class PlotGenerator:
             edgecolor="lightgray",
         )
 
-        # Adjust layout to make space for legends at the bottom
-        fig.subplots_adjust(bottom=0.25)
 
         # Save figure
-        fig_path = self.output_dir / f"{domain}_{task_type}_boundary_metrics.png"
+        fig_path = self.output_dir / f"{domain}_{task_type}_boundary_metrics.pdf"
         plt.savefig(fig_path, dpi=300, bbox_inches="tight")
         plt.close(fig)
 
@@ -802,12 +785,11 @@ class PlotGenerator:
         correct = [correct[i] for i in sorted_indices]
         incorrect = [incorrect[i] for i in sorted_indices]
         accuracy = [accuracy[i] for i in sorted_indices]
-        sorted_display_classes = [display_classes[i] for i in sorted_indices]
+        sorted_display_classes = [display_classes[i][:25] + "..." if len(display_classes[i]) > 25 else display_classes[i] for i in sorted_indices]
 
         # Enhanced figure sizing based on number of classes
-        base_height = max(8, len(classes) * 0.7)
-        fig_height = min(base_height, 16)  # Cap at 16 inches
-        fig, ax = plt.subplots(figsize=(14, fig_height), constrained_layout=True)
+        fig_height = min(12, len(classes) * .75)  # Cap at 16 inches
+        fig, ax = plt.subplots(figsize=(10, fig_height), constrained_layout=True)
         fig.patch.set_facecolor('white')
 
         # Create modern color scheme with gradient based on accuracy
@@ -852,57 +834,26 @@ class PlotGenerator:
         # Enhanced data labels with styled boxes
         for i, (acc, c, ic) in enumerate(zip(accuracy, correct, incorrect)):
             total = c + ic
-            shift = 0.02 if acc > 0.15 else 0.1
-            # Accuracy percentage on the right
-            ax.text(
-                acc + shift, 
-                i, 
-                f"{acc:.1%}", 
-                va="center", 
-                ha="left",
-                fontsize=12,
-                fontweight="bold",
-                bbox=dict(
-                    facecolor="white",
-                    alpha=0.9,
-                    boxstyle="round,pad=0.3",
-                    edgecolor="lightgray",
-                    linewidth=0.5
-                )
-            )
             
             # Count information on the left (inside bar if space allows)
             count_text = f"{c}/{total}"
-            if acc > 0.15:  # If bar is wide enough, put text inside
-                text_x = acc * 0.05
-                text_color = "white"
-                bbox_props = dict(
-                    facecolor=base_color,
-                    alpha=0.8,
-                    boxstyle="round,pad=0.2",
-                    edgecolor="none"
-                )
-            else:  # Otherwise put it outside
-                text_x = 0.02
-                text_color = "#2c3e50"
-                bbox_props = dict(
-                    facecolor="white",
-                    alpha=0.9,
-                    boxstyle="round,pad=0.2",
-                    edgecolor="lightgray",
-                    linewidth=0.5
-                )
                 
             ax.text(
-                text_x,
+                0.03,
                 i,
                 count_text,
                 va="center",
                 ha="left",
-                fontsize=10,
+                fontsize=13,
                 fontweight="bold",
-                color=text_color,
-                bbox=bbox_props
+                color="#2c3e50",
+                bbox= dict(
+                    facecolor="white",
+                    alpha=0.9,
+                    boxstyle="round,pad=0.2",
+                    edgecolor="lightgray",
+                    linewidth=0.5
+                )
             )
 
         # Enhanced styling
@@ -913,27 +864,19 @@ class PlotGenerator:
         ax.set_axisbelow(True)
 
         # Enhanced axis styling
-        ax.set_xlabel("Accuracy", fontsize=16, fontweight="bold", color="#2c3e50", labelpad=15)
-        ax.set_ylabel("Class", fontsize=16, fontweight="bold", color="#2c3e50", labelpad=15)
-
-        # Enhanced title with better typography
-        title_line1 = f"Per-Class Accuracy Analysis"
-        title_line2 = f"{display_model_name} • {display_domain}"
-        # ax.set_title(title_line1, fontsize=22, fontweight="bold", pad=15, color="#2c3e50")
-        ax.text(0.5, 1.08, title_line2, transform=ax.transAxes, 
-               fontsize=20, fontweight="medium", ha="center", 
-               color="#7f8c8d", style="italic")
+        ax.set_xlabel("Accuracy", fontsize=20, fontweight="bold", color="#2c3e50", labelpad=15)
+        ax.set_ylabel("Class", fontsize=20, fontweight="bold", color="#2c3e50", labelpad=15)
 
         # Enhanced y-axis
         ax.set_yticks(y)
-        ax.set_yticklabels(sorted_display_classes, fontsize=14, fontweight="medium")
+        ax.set_yticklabels(sorted_display_classes, fontsize=19, fontweight="medium")
         plt.setp(ax.get_yticklabels(), color="#2c3e50")
         
         # Enhanced x-axis
-        ax.set_xlim(0, 1.15)  # Extra space for labels
-        ax.set_xticks(np.arange(0, 1.1, 0.2))
-        ax.set_xticklabels([f"{x:.0%}" for x in np.arange(0, 1.1, 0.2)], 
-                          fontsize=12, fontweight="medium")
+        ax.set_xlim(0, 1.02)  # Extra space for labels
+        ax.set_xticks(np.arange(0, 1.1, 0.25))
+        ax.set_xticklabels([f"{x:.0%}" for x in np.arange(0, 1.1, 0.25)], 
+                          fontsize=14, fontweight="medium")
         plt.setp(ax.get_xticklabels(), color="#2c3e50")
 
         # Enhanced spines
@@ -949,23 +892,11 @@ class PlotGenerator:
                                   fill=False, color="#dee2e6", linewidth=2, alpha=0.7)
         ax.add_patch(border_rect)
 
-        # Add performance summary in a text box
-        avg_accuracy = np.mean(accuracy)
-        min_accuracy = np.min(accuracy)
-        max_accuracy = np.max(accuracy)
-        
-        summary_text = f"Average: {avg_accuracy:.1%}"
-        ax.text(0.98, 0.98, summary_text, transform=ax.transAxes,
-               fontsize=11, fontweight="medium",
-               verticalalignment="top", horizontalalignment="right",
-               bbox=dict(facecolor="white", alpha=0.9, boxstyle="round,pad=0.5",
-                        edgecolor="#dee2e6", linewidth=1))
-
         # Enhanced save options
         fig_path = (
-            self.output_dir / f"{domain}_{task_type}_{model_name}_class_accuracy.png"
+            self.output_dir / f"{domain}_{task_type}_{model_name}_class_accuracy.pdf"
         )
-        plt.savefig(fig_path, dpi=300, bbox_inches='tight', pad_inches=0.3,
+        plt.savefig(fig_path, dpi=300, bbox_inches='tight', pad_inches=0,
                    facecolor='white', edgecolor='none')
         plt.close(fig)
 
